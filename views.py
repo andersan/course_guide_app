@@ -10,7 +10,7 @@ def index():
 
     return render_template('index.html', **data)
 
-'''testing
+'''
 You should add more functions below to "create pages" (each function preceded 
 by '@app.route' represents a page) on your website.
 
