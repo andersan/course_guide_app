@@ -2,14 +2,30 @@
 <html>
   <head>
     {% block head %}
-    <title>title for your pages</title>
+        <title>A Mere Zebra Scheduler</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     {% endblock %}
   </head>
   <body>
-    <div id="content">{% block content %}{% endblock %}</div>
+    <div class="Wrap">
+        <div id="header">
+            <div class="wrap">
+                <h2><a href="/">A Mere Zebra Scheduler</a></h2>
+            </div>
+        </div>
+        <div id="content">
+            <div class="wrap">
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+    </div><!-- /.Wrap -->    
     <div id="footer">
-      {% block footer %}
-      {% endblock %}
+        <div class="wrap">
+            {% block footer %}
+                &copy 2016 Meerkat Zebras
+            {% endblock %}
+        </div>
     </div>
   </body>
 </html>

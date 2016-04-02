@@ -58,7 +58,7 @@ def get_subjects(term_code, school_code):
     return get_data('/get_subjects?term_code=' + str(term_code) + 
                     '&school=' + school_code)
                     
-def get_courses(term_code, school_code, subject_code):
+def get_catalog_numbers(term_code, school_code, subject_code):
     '''
     Returns a list of valid subjects.
     Each item in the list is a dictionary containing:
@@ -67,3 +67,21 @@ def get_courses(term_code, school_code, subject_code):
     return get_data('/get_catalog_numbers?term_code=' + str(term_code) + 
                     '&school=' + school_code + 
                     '&subject=' + subject_code)
+                    
+def get_course_description(term_code, school_code, subject_code, catalog_number):
+    '''
+    Returns a description for a valid course.
+    '''
+    return get_data('/get_course_description?term_code=' + str(term_code) + 
+                    '&school=' + school_code + 
+                    '&subject=' + subject_code + 
+                    '&catalog_num=' + catalog_number)
+              
+def get_sections(term_code, school_code, subject_code, catalog_number):
+    '''
+    Returns a description for a valid course.
+    '''
+    return get_data('/get_sections?term_code=' + str(term_code) + 
+                    '&school=' + school_code + 
+                    '&subject=' + subject_code + 
+                    '&catalog_num=' + catalog_number)              

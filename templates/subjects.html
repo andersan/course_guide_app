@@ -2,12 +2,10 @@
 
 {% block content %}
 
-<h1> The subjects returned for the selected school are:</h1>
+    <h1> The subjects returned for the selected school are:</h1>
 
-<div>
     {% for subject in subjects %}
         <a href="{{ subject['SubjectCode'] }}/">{{ subject['SubjectDescr'] }}</a><br />
     {% endfor %}
-</div>
 
 {% endblock %}

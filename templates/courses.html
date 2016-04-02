@@ -2,12 +2,10 @@
 
 {% block content %}
 
-<h1> The courses returned for the selected subject are:</h1>
+    <h1> The courses returned for the selected subject are:</h1>
 
-<div>
     {% for course in courses %}
-        <a href="#">{{ course['CourseTitle'] }}</a><br />
+        <a href="{{ course['CatalogNumber'] }}/">{{ course['CourseTitle'] }}</a><br />
     {% endfor %}
-</div>
 
 {% endblock %}

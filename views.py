@@ -21,7 +21,16 @@ def school(term_code, school_code):
     return render_template('subjects.html', **data)    
     
 @app.route('/<term_code>/<school_code>/<subject_code>/')
-def course(term_code, school_code, subject_code):
+def subject(term_code, school_code, subject_code):
     data = {}
-    data['courses'] = get_courses(term_code, school_code, subject_code)
+    data['courses'] = get_catalog_numbers(term_code, school_code, subject_code)
     return render_template('courses.html', **data)  
+    
+@app.route('/<term_code>/<school_code>/<subject_code>/<catalog_number>/')
+def course(term_code, school_code, subject_code, catalog_number):
+    data = {}
+    data['course_description'] = get_course_description(term_code, school_code, 
+                                    subject_code, catalog_number)
+    data['course_sections'] = get_sections(term_code, school_code, 
+                                    subject_code, catalog_number)
+    return render_template('course-info.html', **data)     
