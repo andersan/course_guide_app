@@ -41,11 +41,29 @@ def get_terms():
     '''
     return get_data('/get_terms')
 
-'''
-You should add more functions below to get information from the API.
-
-    -   In addition to the information provided in the spec, use the get_terms function 
-        above as a model for how you might setup the other functions.
-    -   Note some functions will need to have arguments (whereas get_terms does not).
-    -   You may remove this comment when you start.
-'''
+def get_schools(term_code):
+    '''
+    Returns a list of valid schools.
+    Each item in the list is a dictionary containing:
+        ('SchoolCode', 'SchoolDescr', 'SchoolShortDescr')
+    '''
+    return get_data('/get_schools?term_code=' + str(term_code))
+    
+def get_subjects(term_code, school_code):
+    '''
+    Returns a list of valid subjects.
+    Each item in the list is a dictionary containing:
+        ('SubjectShortDescr', 'SubjectCode', 'SubjectDescr')
+    '''
+    return get_data('/get_subjects?term_code=' + str(term_code) + 
+                    '&school=' + school_code)
+                    
+def get_courses(term_code, school_code, subject_code):
+    '''
+    Returns a list of valid subjects.
+    Each item in the list is a dictionary containing:
+        ('SubjectShortDescr', 'SubjectCode', 'SubjectDescr')
+    '''
+    return get_data('/get_catalog_numbers?term_code=' + str(term_code) + 
+                    '&school=' + school_code + 
+                    '&subject=' + subject_code)
