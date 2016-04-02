@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>The details for the selected course are:</h1>
+
+    <p>{{ course_description }}</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Section Number</th>
+                <th>Meeting Times</th>
+                <th>Enrollment Status</th>
+            </tr>
+        </thead>
+        <tbody>
+    {% for section in course_sections %}
+            <tr>
+                <td>{{ section['SectionNumber'] }}</td>
+                <td>{{ section['Meeting']['Times'] }}</td>
+                <td>{{ section['EnrollmentStatus'] }}</td>
+            </tr>
+    {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}
