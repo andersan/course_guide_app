@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1> The schools returned for the selected term are:</h1>
+
+<div>
+    {% for school in schools %}
+        <a href="{{ school['SchoolCode'] }}/">
+            {{ school['SchoolDescr'] }}
+        </a><br />
+    {% endfor %}
+</div>
+
+{% endblock %}

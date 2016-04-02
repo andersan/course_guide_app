@@ -6,7 +6,7 @@
 
 <div>
     {% for term in terms %}
-        <a href="/term/{{ term['TermCode'] }}/">{{ term['TermDescr'] }}</a><br />
+        <a href="/{{ term['TermCode'] }}/">{{ term['TermDescr'] }}</a><br />
     {% endfor %}
 </div>
 
