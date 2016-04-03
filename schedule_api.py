@@ -81,6 +81,8 @@ def get_course_description(term_code, school_code, subject_code, catalog_number)
 def get_sections(term_code, school_code, subject_code, catalog_number):
     '''
     Returns a description for a valid course.
+    Data structure appears to be a list of dicts.
+    Each section returns a dict with ~13 key-var pairs.
     '''
     return get_data('/get_sections?term_code=' + str(term_code) + 
                     '&school=' + school_code + 
@@ -91,8 +93,9 @@ def get_sections(term_code, school_code, subject_code, catalog_number):
 def get_section_details(term_code, school_code, subject_code, catalog_number, section_number):
     '''
     Returns section details for a valid course and section.
-    Data structure appears to be a list of dicts.
-    Each section returns a dict with ~13 key-var pairs.
+    Data structure is a dict with various key-var pairs, most of them
+    are ints and strings. 
+    "Instructors": is a list of dicts which contains string-string key-var pairs.
     '''
     return get_data('/get_sections?term_code=' + str(term_code) + 
                     '&school=' + school_code + 
