@@ -17,8 +17,18 @@
     {% for section in course_sections %}
             <tr>
                 <td>{{ section['SectionNumber'] }}</td>
-                <td>{{ section['Meetings'][0]['Times'] }}</td>
+                <td>
+                    {% for i in section['Meetings'] %}
+                        {{ section['Meetings'][i]['Times']  }}
+                    {% endfor %}
+                </td>
                 <td>{{ section['EnrollmentStatus'] }}</td>
+
+                <!-- add data from get_section_details-->
+                
+                <!-- add data from get_meetings -->
+                
+                <!-- add data from get_textbooks -->
             </tr>
     {% endfor %}
         </tbody>
