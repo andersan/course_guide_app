@@ -33,4 +33,7 @@ def course(term_code, school_code, subject_code, catalog_number):
                                     subject_code, catalog_number)
     data['course_sections'] = get_sections(term_code, school_code, 
                                     subject_code, catalog_number)
+    
+    # TODO: add section details, textbooks and meetings to course info route
+    
     return render_template('course-info.html', **data)     

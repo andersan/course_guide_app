@@ -85,3 +85,9 @@ def get_sections(term_code, school_code, subject_code, catalog_number):
                     '&school=' + school_code + 
                     '&subject=' + subject_code + 
                     '&catalog_num=' + catalog_number)              
+
+# TODO: implement "get_section_details"
+
+# TODO: implement "get_meetings"
+
+# TODO: implement "get_textbooks"
