@@ -71,6 +71,7 @@ def get_catalog_numbers(term_code, school_code, subject_code):
 def get_course_description(term_code, school_code, subject_code, catalog_number):
     '''
     Returns a description for a valid course.
+    ??? is this a single string
     '''
     return get_data('/get_course_description?term_code=' + str(term_code) + 
                     '&school=' + school_code + 
@@ -86,8 +87,18 @@ def get_sections(term_code, school_code, subject_code, catalog_number):
                     '&subject=' + subject_code + 
                     '&catalog_num=' + catalog_number)              
 
-# TODO: implement "get_section_details"
-
+'''
+def get_section_details(term_code, school_code, subject_code, catalog_number, section_number):
+    
+    Returns section details for a valid course and section.
+    
+    # need to 
+    return get_data('/get_sections?term_code=' + str(term_code) + 
+                    '&school=' + school_code + 
+                    '&subject=' + subject_code + 
+                    '&catalog_num=' + catalog_number +
+                    '&section_num=' + section_number)              
+'''
 # TODO: implement "get_meetings"
 
 # TODO: implement "get_textbooks"
