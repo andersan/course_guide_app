@@ -7,6 +7,10 @@ def index():
     data = {}
     data['terms'] = get_terms()
     return render_template('index.html', **data)
+    
+@app.errorhandler(500)
+def page_not_found(e):
+    return render_template('error.html'), 500 
 
 @app.route('/<term_code>/')
 def term(term_code):
@@ -36,4 +40,4 @@ def course(term_code, school_code, subject_code, catalog_number):
     
     # TODO: add section details, textbooks and meetings to course info route
     
-    return render_template('course-info.html', **data)     
+    return render_template('course-info.html', **data)

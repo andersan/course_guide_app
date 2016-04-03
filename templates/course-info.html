@@ -17,7 +17,7 @@
     {% for section in course_sections %}
             <tr>
                 <td>{{ section['SectionNumber'] }}</td>
-                <td>{{ section['Meetings']['Times'] }}</td>
+                <td>{{ section['Meetings'][0]['Times'] }}</td>
                 <td>{{ section['EnrollmentStatus'] }}</td>
             </tr>
     {% endfor %}
