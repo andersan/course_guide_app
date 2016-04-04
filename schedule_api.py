@@ -106,7 +106,7 @@ def get_section_details(term_code, school_code, subject_code, catalog_number, se
                     
 def get_meetings(term_code, school_code, subject_code, catalog_number, section_number): 
      ''' 
-     Returns meeting details for a valid course and section. 
+     Returns meeting times for a valid course and section. 
      ''' 
      return get_data('/get_meeting?term_code=' + str(term_code) +  
                      '&school=' + school_code +  
