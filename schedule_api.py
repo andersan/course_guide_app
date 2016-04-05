@@ -102,7 +102,24 @@ def get_section_details(term_code, school_code, subject_code, catalog_number, se
                     '&subject=' + subject_code + 
                     '&catalog_num=' + catalog_number +
                     '&section_num=' + section_number)              
+                    
+                    
+def get_meetings(term_code, school_code, subject_code, catalog_number, section_number): 
+     ''' 
+     Returns meeting times for a valid section. 
+     ''' 
+     return get_data('/get_meeting?term_code=' + str(term_code) +  
+                     '&school=' + school_code +  
+                    '&subject=' + subject_code +   
+                    '&catalog_num=' + catalog_number + 
+                    '&section_num=' + section_number)  
 
-# TODO: implement "get_meetings"
-
-# TODO: implement "get_textbooks"
+def get_textbooks(term_code, school_code, subject_code, catalog_number, section_number): 
+     ''' 
+     Returns textbook information for a valid course. 
+     ''' 
+     return get_data('/get_textbooks?term_code=' + str(term_code) +  
+                     '&school=' + school_code +  
+                    '&subject=' + subject_code +   
+                    '&catalog_num=' + catalog_number + 
+                    '&section_num=' + section_number) 
