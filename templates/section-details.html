@@ -2,9 +2,28 @@
 
 {% block content %}
 
-    <h1>The details for the selected course are:</h1>
-
-    <p></p>
+    <h1>The details for the selected section are:</h1>
+    
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for meeting in section_meetings %}
+                <tr>
+                    <td>
+                        {{ meeting['InstructorName'] }}
+                    </td>
+                    <td>
+                        {{ meeting['MeetingNumber'] }}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>    
+    </table>
     
     <!-- add data from get_section_details-->
                     

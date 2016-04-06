@@ -9,7 +9,6 @@
         <thead>
             <tr>
                 <th>Section Number</th>
-                <th>Meeting Times</th>
                 <th>Enrollment Status</th>
             </tr>
         </thead>
@@ -20,11 +19,6 @@
                         <a href="{{ section['SectionNumber'] }}/">
                             {{ section['SectionNumber'] }}
                         </a>
-                    </td>
-                    <td>
-                        <!-- for i in len(section['Meetings']) -->
-                            {{ section['Meetings'][0]['Times']  }}
-                        <!-- endfor -->
                     </td>
                     <td>{{ section['EnrollmentStatus'] }}</td>
 
