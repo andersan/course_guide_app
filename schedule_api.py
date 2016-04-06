@@ -108,7 +108,7 @@ def get_meetings(term_code, school_code, subject_code, catalog_number, section_n
      ''' 
      Returns meeting times for a valid section. 
      ''' 
-     return get_data('/get_meeting?term_code=' + str(term_code) +  
+     return get_data('/get_meetings?term_code=' + str(term_code) +  
                      '&school=' + school_code +  
                     '&subject=' + subject_code +   
                     '&catalog_num=' + catalog_number + 
