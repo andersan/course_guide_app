@@ -14,23 +14,23 @@
             </tr>
         </thead>
         <tbody>
-    {% for section in course_sections %}
-            <tr>
-                <td>{{ section['SectionNumber'] }}</td>
-                <td>
-                    {% for i in section['Meetings'] %}
-                        {{ section['Meetings'][i]['Times']  }}
-                    {% endfor %}
-                </td>
-                <td>{{ section['EnrollmentStatus'] }}</td>
+            {% for section in course_sections %}
+                <tr>
+                    <td>
+                        <a href="{{ section['SectionNumber'] }}/">
+                            {{ section['SectionNumber'] }}
+                        </a>
+                    </td>
+                    <td>
+                        <!-- for i in len(section['Meetings']) -->
+                            {{ section['Meetings'][0]['Times']  }}
+                        <!-- endfor -->
+                    </td>
+                    <td>{{ section['EnrollmentStatus'] }}</td>
 
-                <!-- add data from get_section_details-->
-                
-                <!-- add data from get_meetings -->
-                
-                <!-- add data from get_textbooks -->
-            </tr>
-    {% endfor %}
+                    
+                </tr>
+            {% endfor %}
         </tbody>
     </table>
 
