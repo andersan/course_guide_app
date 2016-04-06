@@ -53,9 +53,5 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
                                     catalog_number, section_number)
     data['section_details'] = get_section_details(term_code, school_code, 
                                     subject_code, catalog_number, section_number)
-                                    
-    ''' TODO: add lecturer/professor name, location, number enrolled
-                    and max enrollment   
-    '''
-                
+                                                    
     return render_template('section-details.html', **data)    
