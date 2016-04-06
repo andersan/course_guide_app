@@ -97,7 +97,7 @@ def get_section_details(term_code, school_code, subject_code, catalog_number, se
     are ints and strings. 
     "Instructors": is a list of dicts which contains string-string key-var pairs.
     '''
-    return get_data('/get_sections?term_code=' + str(term_code) + 
+    return get_data('/get_section_details?term_code=' + str(term_code) + 
                     '&school=' + school_code + 
                     '&subject=' + subject_code + 
                     '&catalog_num=' + catalog_number +

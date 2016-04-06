@@ -28,6 +28,7 @@ def school(term_code, school_code):
 def subject(term_code, school_code, subject_code):
     data = {}
     data['courses'] = get_catalog_numbers(term_code, school_code, subject_code)
+    # do we need to have a loop here? we have been implementing the loops in the templates
     for course in data['courses']:
         course['sections'] = get_sections(term_code, school_code, subject_code, course['CatalogNumber'])
         for section in course['sections']:
@@ -49,8 +50,8 @@ def course(term_code, school_code, subject_code, catalog_number):
                                     subject_code, catalog_number)
     data['course_details'] = get_meetings(term_code, school_code, subject_code,
                                     catalog_number, section_number)
-    '''data['course_section_details'] = get_section_details(term_code, school_code, 
-                                    subject_code, catalog_number, section_number)'''
+    data['course_section_details'] = get_section_details(term_code, school_code, 
+                                    subject_code, catalog_number, section_number)
     
     ''' TODO: add lecturer/professor name, location, number enrolled
                     and max enrollment   
