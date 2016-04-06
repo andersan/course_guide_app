@@ -9,27 +9,23 @@
         <thead>
             <tr>
                 <th>Section Number</th>
-                <th>Meeting Times</th>
                 <th>Enrollment Status</th>
             </tr>
         </thead>
         <tbody>
-    {% for section in course_sections %}
-            <tr>
-                <td>{{ section['SectionNumber'] }}</td>
-                <td>
-                    {% for i in section['Meetings'] %}
-                        {{ section['Meetings'][i]['Times']  }}
-                    {% endfor %}
-                </td>
-                <td>{{ section['EnrollmentStatus'] }}</td>
-
-                <!-- add data from get_section_details-->
-                
-                <!-- add data from get_meetings -->
+            {% for section in course_sections %}
+                <tr>
+                    <td>
+                        <a href="{{ section['SectionNumber'] }}/">
+                            {{ section['SectionNumber'] }}
+                        </a>
+                    </td>
+                    <td>{{ section['EnrollmentStatus'] }}</td>
 
             </tr>
     {% endfor %}
+                    
+                </tr>
         </tbody>
 
         <!-- need to add more info on this page -->

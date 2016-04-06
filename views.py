@@ -28,16 +28,11 @@ def school(term_code, school_code):
 def subject(term_code, school_code, subject_code):
     data = {}
     data['courses'] = get_catalog_numbers(term_code, school_code, subject_code)
-    # do we need to have a loop here? we have been implementing the loops in the templates
-    for course in data['courses']:
-        course['sections'] = get_sections(term_code, school_code, subject_code, course['CatalogNumber'])
-        for section in course['sections']:
-            section['details'] = get_section_details(term_code, school_code, subject_code, course['CatalogNumber'], section['SectionNumber'])
 
-        # ''' TODO: add the following values to the courses page:
-        #         catalog number, course description, section type (LEC, DIS, etc)
-        #         and number (001, 011, etc)
-# '''
+    # ''' TODO: add the following values to the courses page:
+    #         catalog number, course description, section type (LEC, DIS, etc)
+    #         and number (001, 011, etc)
+    # '''
     # return data['courses']
     return render_template('courses.html', **data)  
     
@@ -48,13 +43,18 @@ def course(term_code, school_code, subject_code, catalog_number):
                                     subject_code, catalog_number)
     data['course_sections'] = get_sections(term_code, school_code, 
                                     subject_code, catalog_number)
-    data['course_details'] = get_meetings(term_code, school_code, subject_code,
-                                    catalog_number, section_number)
-    data['course_section_details'] = get_section_details(term_code, school_code, 
-                                    subject_code, catalog_number, section_number)
-    
     ''' TODO: add lecturer/professor name, location, number enrolled
                     and max enrollment   
     '''
     
     return render_template('course-info.html', **data)
+    
+@app.route('/<term_code>/<school_code>/<subject_code>/<catalog_number>/<section_number>/')
+def section(term_code, school_code, subject_code, catalog_number, section_number):
+    data = {}
+    data['section_meetings'] = get_meetings(term_code, school_code, subject_code,
+                                    catalog_number, section_number)
+    data['section_details'] = get_section_details(term_code, school_code, 
+                                    subject_code, catalog_number, section_number)
+                                    
+    return render_template('section-details.html', **data)    
