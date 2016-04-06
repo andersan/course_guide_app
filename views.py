@@ -24,12 +24,16 @@ def school(term_code, school_code):
 def subject(term_code, school_code, subject_code):
     data = {}
     data['courses'] = get_catalog_numbers(term_code, school_code, subject_code)
-    
-    ''' TODO: add the following values to the courses page:
-            course number, course description, section type (LEC, DIS, etc)
-            and number (001, 011, etc)
-    '''
+    for course in data['courses']:
+        course['sections'] = get_sections(term_code, school_code, subject_code, course['CatalogNumber'])
+        for section in course['sections']:
+            section['details'] = get_section_details(term_code, school_code, subject_code, course['CatalogNumber'], section['SectionNumber'])
 
+        # ''' TODO: add the following values to the courses page:
+        #         catalog number, course description, section type (LEC, DIS, etc)
+        #         and number (001, 011, etc)
+# '''
+    # return data['courses']
     return render_template('courses.html', **data)  
     
 @app.route('/<term_code>/<school_code>/<subject_code>/<catalog_number>/')
