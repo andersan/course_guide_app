@@ -7,11 +7,16 @@
     <table>
         <thead>
             <tr>
-                <th></th>
-                <th></th>
+                <th>Instructor Name</th>
+                <th>Meeting Number</th>
+                <th>Location</th>
+                <th>Times</th>
+                <th>Days</th>
             </tr>
         </thead>
         <tbody>
+
+            <!-- do we need a for loop? or is there always only one meeting?? -->
             {% for meeting in section_meetings %}
                 <tr>
                     <td>
@@ -20,8 +25,39 @@
                     <td>
                         {{ meeting['MeetingNumber'] }}
                     </td>
+                    <td>
+                        {{ meeting['Location'] }}
+                    </td>
+                    <td>
+                        {{ meeting['Times'] }}
+                    </td>
+                    <td>
+                        {{ meeting['Days'] }}
+                    </td>
                 </tr>
             {% endfor %}
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <thead>    
+            <tr>
+                <th>Seats Filled</th>
+                <th>Total Seats</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- dont know how we should format enrollment numbers
+                    in the case that there are multiple meetings, we do 
+                    not seem to have the enrollment for each meeting --> 
+                <tr>
+                    <td>
+                        {{ section_details['EnrollmentTotal'] }}
+                    </td>
+                    <td>
+                        {{ section_details['EnrollmentCapacity'] }}
+                    </td>
+                </tr>
         </tbody>    
     </table>
     

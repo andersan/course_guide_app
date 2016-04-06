@@ -27,12 +27,7 @@ def school(term_code, school_code):
 @app.route('/<term_code>/<school_code>/<subject_code>/')
 def subject(term_code, school_code, subject_code):
     data = {}
-    data['courses'] = get_catalog_numbers(term_code, school_code, subject_code)
-
-    # ''' TODO: add the following values to the courses page:
-    #         catalog number, course description, section type (LEC, DIS, etc)
-    #         and number (001, 011, etc)
-    # '''
+    data['courses'] = get_catalog_numbers(term_code, school_code, subject_code)    
     # return data['courses']
     return render_template('courses.html', **data)  
     
@@ -43,8 +38,10 @@ def course(term_code, school_code, subject_code, catalog_number):
                                     subject_code, catalog_number)
     data['course_sections'] = get_sections(term_code, school_code, 
                                     subject_code, catalog_number)
-    ''' TODO: add lecturer/professor name, location, number enrolled
-                    and max enrollment   
+    
+    ''' TODO: add the following values to the courses page:
+             catalog number, course description, section type (LEC, DIS, etc)
+             and number (001, 011, etc)
     '''
     
     return render_template('course-info.html', **data)
@@ -57,4 +54,8 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
     data['section_details'] = get_section_details(term_code, school_code, 
                                     subject_code, catalog_number, section_number)
                                     
+    ''' TODO: add lecturer/professor name, location, number enrolled
+                    and max enrollment   
+    '''
+                
     return render_template('section-details.html', **data)    
