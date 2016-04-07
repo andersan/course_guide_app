@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 
+{% block head %}
+
+    <title>Courses</title>
+
+{% endblock %}
+
 {% block content %}
 
     <h1> The courses returned for the selected subject are:</h1>
@@ -7,5 +13,9 @@
     {% for course in courses %}
         <a href="{{ course['CatalogNumber'] }}/">{{ course['CourseTitle'] }}</a><br />
     {% endfor %}
+
+    <!-- TODO: add the following values to the courses page:
+                 catalog number, course description, section type (LEC, DIS, etc)
+                 and number (001, 011, etc) -->
 
 {% endblock %}

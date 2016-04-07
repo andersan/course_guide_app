@@ -1,5 +1,11 @@
 {% extends "base.html" %}
 
+{% block head %}
+
+    <title>Course Info</title>
+
+{% endblock %}
+
 {% block content %}
 
     <h1>The details for the selected course are:</h1>
@@ -10,6 +16,7 @@
             <tr>
                 <th>Section</th>
                 <th>Enrollment Status</th>
+                <th>Enrollment Total</th>
             </tr>
         </thead>
         <tbody>
@@ -21,12 +28,23 @@
                             {{ section['SectionNumber'] }}
                         </a>
                     </td>
-                    <td>{{ section['EnrollmentStatus'] }}</td>
+                    <!-- these enrollment numbers aren't necessary (but we can keep them)-->
+                    <td>
+                        {{ section['EnrollmentStatus'] }}
+                    </td>
+                    <td>
+                        {{ section['EnrollmentTotal'] }}
+                    </td>
 
-                    
                 </tr>
             {% endfor %}
         </tbody>
+
+        <!-- need to add more info on this page: -->
+                     <!-- catalog number, course description, section type 
+                     (LEC, DIS, etc) and number (001, 011, etc) -->
+
+
     </table>
 
 {% endblock %}
