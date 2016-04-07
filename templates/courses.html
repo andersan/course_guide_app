@@ -10,9 +10,27 @@
 
     <h1> The courses returned for the selected subject are:</h1>
 
-    {% for course in courses %}
-        <a href="{{ course['CatalogNumber'] }}/">{{ course['CourseTitle'] }}</a><br />
-    {% endfor %}
+    <table>
+        <tr>
+            <th>Course Title</th>
+            <th>Course Number</th>
+        </tr>
+        {% for course in courses %}
+        <tr>    
+            <td>
+                <a href="{{ course['CatalogNumber'] }}/">
+                    {{ course['CourseTitle'] }}
+                </a>
+            </td>
+            <td>
+                <a href="{{ course['CatalogNumber'] }}/">
+                    {{ course['CatalogNumber'] }}
+                </a>
+            </td>
+        </tr>    
+        {% endfor %}
+        
+    </table>
 
     <!-- TODO: add the following values to the courses page:
                  catalog number, course description, section type (LEC, DIS, etc)
