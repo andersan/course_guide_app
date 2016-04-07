@@ -38,12 +38,7 @@ def course(term_code, school_code, subject_code, catalog_number):
                                     subject_code, catalog_number)
     data['course_sections'] = get_sections(term_code, school_code, 
                                     subject_code, catalog_number)
-    
-    ''' TODO: add the following values to the courses page:
-             catalog number, course description, section type (LEC, DIS, etc)
-             and number (001, 011, etc)
-    '''
-    
+        
     return render_template('course-info.html', **data)
     
 @app.route('/<term_code>/<school_code>/<subject_code>/<catalog_number>/<section_number>/')
