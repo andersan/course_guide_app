@@ -8,7 +8,7 @@
     <table>
         <thead>
             <tr>
-                <th>Section Number</th>
+                <th>Section</th>
                 <th>Enrollment Status</th>
             </tr>
         </thead>
@@ -17,6 +17,7 @@
                 <tr>
                     <td>
                         <a href="{{ section['SectionNumber'] }}/">
+                            {{ section['SectionType'] }}, 
                             {{ section['SectionNumber'] }}
                         </a>
                     </td>
