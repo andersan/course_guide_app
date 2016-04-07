@@ -11,12 +11,14 @@
     <h1>The details for the selected course are:</h1>
 
     <p>{{ course_description }}</p>
+
     <table>
         <thead>
             <tr>
                 <th>Section Number</th>
                 <th>Enrollment Status</th>
                 <th>Enrollment Total</th>
+                <th>Section Type</th>
             </tr>
         </thead>
         <tbody>
@@ -27,21 +29,19 @@
                             {{ section['SectionNumber'] }}
                         </a>
                     </td>
-                    <!-- these enrollment numbers aren't necessary (but we can keep them)-->
                     <td>
                         {{ section['EnrollmentStatus'] }}
                     </td>
                     <td>
                         {{ section['EnrollmentTotal'] }}
                     </td>
+                    <td>
+                        {{ section['SectionType'] }}                        
+                    </td>
 
                 </tr>
             {% endfor %}
         </tbody>
-
-        <!-- need to add more info on this page: -->
-                     <!-- catalog number, course description, section type 
-                     (LEC, DIS, etc) and number (001, 011, etc) -->
 
 
     </table>
