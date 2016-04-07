@@ -28,7 +28,7 @@ def school(term_code, school_code):
 def subject(term_code, school_code, subject_code):
     data = {}
     data['courses'] = get_catalog_numbers(term_code, school_code, subject_code)    
-    # return data['courses']
+    
     return render_template('courses.html', **data)  
     
 @app.route('/<term_code>/<school_code>/<subject_code>/<catalog_number>/')
