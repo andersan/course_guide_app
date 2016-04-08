@@ -8,7 +8,8 @@
 
 {% block content %}
 
-    <h1>Terms</h1>
+    <h1>The Root of All Courses</h1>
+    <h2>Select a term</h2>
 
     {% for term in terms %}
         <a href="/{{ term['TermCode'] }}/">{{ term['TermDescr'] }}</a><br />

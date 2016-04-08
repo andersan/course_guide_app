@@ -7,42 +7,62 @@
 {% endblock %}
 
 {% block content %}
-
-    <h1>The details for the selected course are:</h1>
     
-    <h3> {{ course_title }} </h3>
-
-    <p> {{ course_description }} </p>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Section</th>
-                <th>Enrollment Status</th>
-                <th>Enrollment Total</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for section in course_sections %}
-                <tr>
+    <div class="courseWrap">
+        <div class="courseNav">
+            <h2>Courses</h2>
+            <table>
+                {% for course in courses %}
+                <tr>  
                     <td>
-                        <a href="{{ section['SectionNumber'] }}/">
-                            {{ section['SectionType'] }}, 
-                            {{ section['SectionNumber'] }}
+                        <a href="../{{ course['CatalogNumber'] }}/">
+                            {{ course['CourseTitle'] }}
                         </a>
                     </td>
-                    <td>
-                        {{ section['EnrollmentStatus'] }}
-                    </td>
-                    <td>
-                        {{ section['EnrollmentTotal'] }}
-                    </td>
+                </tr>    
+                {% endfor %}
+            </table>
+        </div><!-- /.courseNav -->
+    
+        <div class="courseDetails">
+            <h1> {{ course_title }} </h3>
 
-                </tr>
-            {% endfor %}
-        </tbody>
+            <p> {{ course_description }} </p>
+        
+            <h2>Sections</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Section</th>
+                        <th>Enrollment Status</th>
+                        <th>Enrollment Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for section in course_sections %}
+                        <tr>
+                            <td>
+                                <a href="{{ section['SectionNumber'] }}/">
+                                    {{ section['SectionType'] }}, 
+                                    {{ section['SectionNumber'] }}
+                                </a>
+                            </td>
+                            <td>
+                                {{ section['EnrollmentStatus'] }}
+                            </td>
+                            <td>
+                                {{ section['EnrollmentTotal'] }}
+                            </td>
+
+                        </tr>
+                    {% endfor %}
+                </tbody>
 
 
-    </table>
+            </table>
+        </div><!-- /.courseDetails -->  
+    </div><!-- /.courseWrap -->
+    
+    <div class="clear"></div>
 
 {% endblock %}

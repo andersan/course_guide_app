@@ -12,19 +12,19 @@
 
     <table>
         <tr>
-            <th>Course Title</th>
             <th>Course Number</th>
+            <th>Course Title</th>
         </tr>
         {% for course in courses %}
         <tr>    
             <td>
                 <a href="{{ course['CatalogNumber'] }}/">
-                    {{ course['CourseTitle'] }}
+                    {{ course['CatalogNumber'] }}
                 </a>
             </td>
             <td>
                 <a href="{{ course['CatalogNumber'] }}/">
-                    {{ course['CatalogNumber'] }}
+                    {{ course['CourseTitle'] }}
                 </a>
             </td>
         </tr>    
