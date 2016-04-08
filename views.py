@@ -34,6 +34,7 @@ def subject(term_code, school_code, subject_code):
 @app.route('/<term_code>/<school_code>/<subject_code>/<catalog_number>/')
 def course(term_code, school_code, subject_code, catalog_number):
     data = {}
+    data['courses'] = get_catalog_numbers(term_code, school_code, subject_code)  
     data['course_description'] = get_course_description(term_code, school_code, 
                                     subject_code, catalog_number)
     data['course_sections'] = get_sections(term_code, school_code, 
@@ -44,6 +45,9 @@ def course(term_code, school_code, subject_code, catalog_number):
 @app.route('/<term_code>/<school_code>/<subject_code>/<catalog_number>/<section_number>/')
 def section(term_code, school_code, subject_code, catalog_number, section_number):
     data = {}
+    data['courses'] = get_catalog_numbers(term_code, school_code, subject_code) 
+    data['course_sections'] = get_sections(term_code, school_code, 
+                                    subject_code, catalog_number)
     data['section_meetings'] = get_meetings(term_code, school_code, subject_code,
                                     catalog_number, section_number)
     data['section_details'] = get_section_details(term_code, school_code, 
