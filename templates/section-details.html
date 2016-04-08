@@ -8,33 +8,6 @@
 
 {% block content %}
 
-    <h1>The details for the selected section are:</h1>
-
-    <h3> {{ section_details['CourseDescr'] }} </h3>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Instructor Name</th>
-                <th>Meeting Number</th>
-                <th>Location</th>
-                <th>Times</th>
-                <th>Days</th>
-            </tr>
-        </thead>
-        <tbody>
-
-            {% for meeting in section_meetings %}
-                <tr>
-                    <td>
-                        {{ meeting['InstructorName'] }}
-                    </td>
-                    <td>
-                        {{ meeting['MeetingNumber'] }}
-                    </td>
-                    <td>
-                        {{ meeting['Location'] }}
-                    </td>
     <div class="courseWrap">
         <div class="courseNav">
             <h2>Courses</h2>
@@ -46,34 +19,7 @@
                             {{ course['CourseTitle'] }}
                         </a>
                     </td>
-                    <td>
-                        {{ meeting['Days'] }}
-                    </td>
                 </tr>
-            {% endfor %}
-        </tbody>
-    </table>
-    <br>
-    <table>
-        <thead>    
-            <tr>
-                <th>Seats Filled</th>
-                <th>Total Seats</th>
-            </tr>
-        </thead>
-        <tbody>
-
-                <tr>
-                    <td>
-                        {{ section_details['EnrollmentTotal'] }}
-                    </td>
-                    <td>
-                        {{ section_details['EnrollmentCapacity'] }}
-                    </td>
-                </tr>
-        </tbody>    
-    </table>
-                </tr>    
                 {% endfor %}
             </table>
         </div><!-- /.courseNav -->
