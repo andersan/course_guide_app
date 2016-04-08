@@ -38,6 +38,7 @@ def course(term_code, school_code, subject_code, catalog_number):
                                     subject_code, catalog_number)
     data['course_sections'] = get_sections(term_code, school_code, 
                                     subject_code, catalog_number)
+    data['course_title'] = subject_code + ' ' + catalog_number
         
     return render_template('course-info.html', **data)
     

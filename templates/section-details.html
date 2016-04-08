@@ -9,9 +9,9 @@
 {% block content %}
 
     <h1>The details for the selected section are:</h1>
-    
+
     <h3> {{ section_details['CourseDescr'] }} </h3>
-    
+
     <table>
         <thead>
             <tr>
@@ -24,7 +24,6 @@
         </thead>
         <tbody>
 
-            <!-- do we need a for loop? or is there always only one meeting?? -->
             {% for meeting in section_meetings %}
                 <tr>
                     <td>
@@ -55,9 +54,7 @@
             </tr>
         </thead>
         <tbody>
-            <!-- dont know how we should format enrollment numbers
-                    in the case that there are multiple meetings, we do 
-                    not seem to have the enrollment for each meeting --> 
+
                 <tr>
                     <td>
                         {{ section_details['EnrollmentTotal'] }}
@@ -68,11 +65,5 @@
                 </tr>
         </tbody>    
     </table>
-    
-    <!-- add data from get_section_details-->
-                    
-    <!-- add data from get_meetings -->
-    
-    <!-- add data from get_textbooks -->
 
 {% endblock %}
