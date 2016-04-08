@@ -10,13 +10,7 @@
 
     <h1>The details for the selected course are:</h1>
     
-    <p>
-        {% if {{ course_description }} == "" %} 
-        Course description not available. 
-        {% else %} 
-        {{ course_description }}
-        {% endif %}
-   </p>
+    <p> {{ course_description }} </p>
 
     <table>
         <thead>
