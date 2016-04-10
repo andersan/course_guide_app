@@ -55,4 +55,12 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
     data['section_details'] = get_section_details(term_code, school_code, 
                                     subject_code, catalog_number, section_number)
                                                     
-    return render_template('section-details.html', **data)    
+    return render_template('section-details.html', **data)  
+
+@app.route('/about-us.html/')
+def about():
+    data = {}
+
+    #if doesn't work, use an empty data
+
+    return render_template('about-us.html', **data)  
