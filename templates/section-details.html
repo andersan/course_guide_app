@@ -85,12 +85,15 @@
             </table>
             {% if section_location == 'ARR' or section_location == 'TBA' %}
                 Location to be announced
+            
             {% else %}
-                {% set section_location = section_location.split(' ', 1) %}
-                {% set building_name = dict.get(section_location[1], None) %}
-
-            Google Maps Embed API - need to dynamically insert the name of the building the course is held in
-
+            <!-- get building name, city and/or address to display a point on a map -->
+                <!-- get building abbreviation -->
+                {% set section_location = section_location.split(' ', 1) %} 
+                <!-- match building abbreviation with building location -->
+                {% set building_name = building_locations.get(section_location[1], None) %} 
+            
+            <!-- dynamically insert data into google maps embed API -->
             <iframe
               width="600"
               height="450"
@@ -99,6 +102,7 @@
             </iframe>
             
             {% endif %}
+            <!-- write different ones for non-ann arbor stuff-->
         </div><!--/.courseDetails -->    
     </div><!-- /.courseWrap -->
 
