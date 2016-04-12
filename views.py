@@ -54,12 +54,7 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
                                     catalog_number, section_number)
     data['section_details'] = get_section_details(term_code, school_code, 
                                     subject_code, catalog_number, section_number)
-    data['section_location'] = get_meetings(term_code, school_code, subject_code,
-                                    catalog_number, section_number)[0]['Location']
-   # data['building_names'] = 
-    data['dict'] = {'OBL': 'Observatory+Lodge,+1402+Washington+Heights'}
-                                                    
-    return render_template('section-details.html', **data) 
+    data['building_names'] = 
 
 # building abbreviations from the office of the registrar - make into a dict
 '''
@@ -192,7 +187,102 @@ WH  West Hall   Central Campus
 WOMEN'S HOSP    Women's Hospital    Medical Campus
 WQ  West Quad   Central Campus
 '''
- 
+
+locations = {
+    
+    'EH': 'East Hall',
+    'EQ': 'East Quadrangle',
+    'ERB1': 'Engineering Research Building 1',
+    'ERB2': 'Engineering Research Building 2',
+    'EWRE': 'Environmental & Water Resources Engineering Building',
+    'FA CAMP': 'Fresh Air Camp, Pinckney',
+    'FORD LIB': 'Ford Library',
+    'FXB': 'Francois-Xavier Bagnoud Building',
+    'GFL': 'Gorguze Family Laboratory',
+    'GGBL': 'G. G. Brown Laboratory',
+    'GLIBN': 'Harlan Hatcher Graduate Library',
+    'HH': 'Haven Hall',
+    'HUTCH': 'Hutchins Hall',
+    'IM POOL': 'Intramural Building',
+    'IOE': 'Industrial and Operations Engineering Building',
+    'ISR': 'Institute for Social Research',
+    'K-BUS': 'Kresge Library',
+    'KEC': 'Kellogg Eye Center',
+    'KEENE THTR EQ': 'Keene Theater, Residential College, East Quadrangle',
+    'KELSEY': 'Kelsey Museum of Archaeology',
+    'KHRI': 'Kresge Hearing Research Institute',
+    'LANE': 'Lane Hall',
+    'LBME': 'Lurie Biomedical Engineering Building',
+    'LEAG': 'Michigan League',
+    'LEC': 'Lurie Engineering Center',
+    'LLIB': 'Law Library',
+    'LORCH': 'Lorch Hall',
+    'LSA': 'Literature, Science, and the Arts Building',
+    'LSI': 'Life Sciences Institute',
+    'LSSH': 'Law School South Hall',
+    'MARKLEY': 'Mary Markley Hall',
+    'MAX KADE': 'Max Kade House, 627 Oxford Street',
+    'MH': 'Mason Hall',
+    'MHRI': 'Mental Health Research Institute',
+    'MLB': 'Modern Languages Building',
+    'MONROECTY HD': 'Monroe County Health Department',
+    'MOSHER': 'Mosher Jordan Hall',
+    'MOTT': 'C.S. Mott Children\'s Hospital',
+    'MSC1': 'Medical Science, Building I',
+    'MSC2': 'Medical Science, Building II',
+    'MSRB3': 'Medical Science Research, Building III',
+    'NAME': 'Naval Architecture and Marine Engineering Building',
+    'NCRB': 'North Campus Recreation Building',
+    'NCRC': 'North Campus Research Complex',
+    'NIB': '300 North Ingalls Building',
+    '400NI': '400 North Ingalls Building',
+    'NORTHVILLEPH': 'Northville State Hospital',
+    'NQ': 'North Quad',
+    'NS': 'Edward Henry Kraus Natural Science Building',
+    'OBL': 'Observatory Lodge, 1402 Washington Heights',
+    'PALM': 'Palmer Commons',
+    'PHOENIXLAB': 'Phoenix Memorial Laboratory',
+    'PIER': 'Pierpont Commons',
+    'POWER CTR': 'Power Center for Performing Arts',
+    'RACK': 'Horace H. Rackham, School of Graduate Studies',
+    'RAND': 'Randall Laboratory',
+    'R-BUS': 'Ross School of Business Building',
+    'REVELLI': 'William D. Revelli Hall',
+    'ROSS AC': 'Stephen M. Ross Academic Center',
+    'RUTHVEN': 'A. G. Ruthven Museums Building',
+    'SCHEM': 'Glenn E. Schembechler Hall',
+    'SEB': 'School of Education Building',
+    'SHAPIRO': 'Shapiro Undergraduate Library',
+    'SM': 'Earl V. Moore Building, School of Music',
+    'SNB': 'School of Nursing Building',
+    'SPH1': 'Henry Vaughan Building',
+    'SPH2': 'Thomas Francis, Jr Building',
+    'SRB': 'Space Research Building',
+    'STB': '202 South Thayer Building',
+    'STJOSEPH HOSP': 'St. Joseph Mercy Hospital',
+    'STOCKWELL': 'Stockwell Hall',
+    'STRNS': 'Sterns Building',
+    'T&TB': 'Track & Tennis Building',
+    'TAP': 'Tappan Hall',
+    'TAUBL': 'Learning Resource Center, Taubman Medical Library',
+    'TISCH': 'Tisch Hall',
+    'UM HOSP': 'University Hospital Medical Campus',
+    'UMMA': 'University of Michigan Museum of Art (Alumni Memorial Hall)',
+    'UNION': 'Michigan Union',
+    'USB': 'Undergraduate Science Building',
+    'UTOWER': 'University Towers, 1225 S. University',
+    'VETERANSHOSP': 'Veterans Administration Hospital',
+    'WASHCTY HD': 'Washtenaw County Health Department',
+    'W-BUS': 'Wyly Hall',
+    'WDC': 'Charles R. Walgreen, Jr. Drama Center',
+    'WEILL': 'Joan and Sanford Weill Hall',
+    'WEIS': 'Weiser Hall',
+    'WH': 'West Hall',
+    'WOMEN\'S HOSP': 'Women\'s Hospital',
+    'WQ': 'West Quad',
+}
+                                                    
+    return render_template('section-details.html', **data)  
 
 @app.route('/about-us.html/')
 def about():
