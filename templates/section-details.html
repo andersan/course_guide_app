@@ -58,6 +58,7 @@
                                 {{ meeting['Days'] }}
                             </td>
                         </tr>
+                        <!-- catch the name (not number) of the building the section is in -->
                     {% endfor %}
                 </tbody>
             </table>
@@ -83,6 +84,15 @@
                         </tr>
                 </tbody>    
             </table>
+            <!-- Google Maps Embed API - need to dynamically insert the name of the building the course is held in
+            <iframe>
+              width="600"
+              height="450"
+              frameborder="0" style="border:0"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCoSqzSoUuwDTbtrZq25mk0Mj_rDF_5N7k
+                &q={{ meeting_building }},Ann+Arbor+MI" allowfullscreen>
+            </iframe>
+            -->
         </div><!--/.courseDetails -->    
     </div><!-- /.courseWrap -->
 
