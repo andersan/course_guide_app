@@ -54,7 +54,12 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
                                     catalog_number, section_number)
     data['section_details'] = get_section_details(term_code, school_code, 
                                     subject_code, catalog_number, section_number)
-    data['building_names'] = 
+    data['section_location'] = get_meetings(term_code, school_code, subject_code,
+                                    catalog_number, section_number)[0]['Location']
+   # data['building_names'] = 
+
+                                                    
+    return render_template('section-details.html', **data) 
 
 # building abbreviations from the office of the registrar - make into a dict
 '''
@@ -187,9 +192,7 @@ WH  West Hall   Central Campus
 WOMEN'S HOSP    Women's Hospital    Medical Campus
 WQ  West Quad   Central Campus
 '''
-
-                                                    
-    return render_template('section-details.html', **data)  
+ 
 
 @app.route('/about-us.html/')
 def about():
