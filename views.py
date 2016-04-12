@@ -57,7 +57,7 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
     data['section_location'] = get_meetings(term_code, school_code, subject_code,
                                     catalog_number, section_number)[0]['Location']
    # data['building_names'] = 
-
+    data['dict'] = {'OBL': 'Observatory+Lodge,+1402+Washington+Heights'}
                                                     
     return render_template('section-details.html', **data) 
 

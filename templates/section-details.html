@@ -87,17 +87,18 @@
                 Location to be announced
             {% else %}
                 {% set section_location = section_location.split(' ', 1) %}
-                {{ section_location[1] }}
-            {% endif %}
-            <!-- Google Maps Embed API - need to dynamically insert the name of the building the course is held in
+                {% set building_name = dict.get(section_location[1], None) %}
+
+            Google Maps Embed API - need to dynamically insert the name of the building the course is held in
+
             <iframe>
               width="600"
               height="450"
               frameborder="0" style="border:0"
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCoSqzSoUuwDTbtrZq25mk0Mj_rDF_5N7k
-                &q=[location??],Ann+Arbor+MI" allowfullscreen>
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCoSqzSoUuwDTbtrZq25mk0Mj_rDF_5N7k&q={{building_name}},Ann+Arbor+MI" allowfullscreen>
             </iframe>
-            -->
+            
+            {% endif %}
         </div><!--/.courseDetails -->    
     </div><!-- /.courseWrap -->
 
