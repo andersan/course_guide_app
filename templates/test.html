@@ -15,7 +15,10 @@
 
     {% else %}
     <!-- get building name, city and/or address to display a point on a map -->
-
+    
+    {{ building_name }}
+    <br><br>
+    
     <!-- dynamically insert data into google maps embed API -->
     <iframe
       width="600"
@@ -23,6 +26,8 @@
       frameborder="0" style="border:0"
       src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCoSqzSoUuwDTbtrZq25mk0Mj_rDF_5N7k&q={{name}},Ann+Arbor+MI" allowfullscreen>
     </iframe>
+    
+    <br><br>
 
     {% endif %}
 
