@@ -12,7 +12,14 @@
     <h2>Select a term</h2>
 
     {% for term in terms %}
-        <a href="/{{ term['TermCode'] }}/">{{ term['TermDescr'] }}</a><br />
+        <a class="term" href="/{{ term['TermCode'] }}/">{{ term['TermDescr'] }}</a><br />
     {% endfor %}
+    
+    <script type="text/javascript">
+        $(".term:contains('Fall')").addClass("fall");
+        $(".term:contains('Summer')").addClass("summer");
+        $(".term:contains('Spring')").addClass("spring");
+        $(".term:contains('Winter')").addClass("winter");
+    </script>
 
 {% endblock %}

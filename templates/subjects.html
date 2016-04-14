@@ -8,6 +8,11 @@
 
 {% block content %}
 
+    <div class="breadcrumbs">
+        <a class="item" href="/{{selected_term}}/">{{selected_term}}</a> &raquo; 
+        <span class="item">{{ selected_school }}</span>
+    </div>
+
     <h1> The subjects returned for the selected school are:</h1>
 
     {% for subject in subjects %}
