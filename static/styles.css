@@ -76,6 +76,23 @@ td {
     }
     #header a:hover {
         color: #fff;
+    }   
+#nav {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+    #nav li {
+        display: inline-block;
+        list-style: none;
+    }
+    #nav a {
+        display: block;
+        padding: 6px 12px;
+    }
+    #nav a:hover { 
+        background: #e0e0e0;
+        color: #222;
     }
 #content {
     padding: 20px 0;

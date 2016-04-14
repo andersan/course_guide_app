@@ -8,6 +8,14 @@
 
 {% block content %}
 
+    <div class="breadcrumbs">
+        <a class="item" href="/{{ selected_term }}/">{{ selected_term }}</a> &raquo; 
+        <a class="item" href="/{{ selected_term }}/{{ selected_school }}/">{{ selected_school }}</a> &raquo;
+        <a class="item" href="/{{ selected_term }}/{{ selected_school }}/{{ selected_subject }}/">{{ selected_subject }}</a> &raquo;
+        <a class="item" href="/{{ selected_term }}/{{ selected_school }}/{{ selected_subject }}/{{ selected_course }}/">{{ selected_course }}</a> &raquo;
+        <span class="item">{{ selected_section }}</span>
+    </div>
+
     <div class="courseWrap">
         <div class="courseNav">
             <h2>Courses</h2>

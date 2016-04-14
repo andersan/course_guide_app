@@ -15,38 +15,50 @@ def page_not_found(e):
 @app.route('/<term_code>/')
 def term(term_code):
     data = {}
+    data['selected_term'] = term_code
     data['schools'] = get_schools(term_code)
-    data['current_term'] = term_code
     return render_template('schools.html', **data)
     
 @app.route('/<term_code>/<school_code>/')
 def school(term_code, school_code):
     data = {}
+    data['selected_term'] = term_code
+    data['selected_school'] = school_code
     data['subjects'] = get_subjects(term_code, school_code)
     return render_template('subjects.html', **data)    
     
 @app.route('/<term_code>/<school_code>/<subject_code>/')
 def subject(term_code, school_code, subject_code):
     data = {}
+    data['selected_term'] = term_code
+    data['selected_school'] = school_code
+    data['selected_subject'] = subject_code
     data['courses'] = get_catalog_numbers(term_code, school_code, subject_code)    
-    
     return render_template('courses.html', **data)  
     
 @app.route('/<term_code>/<school_code>/<subject_code>/<catalog_number>/')
 def course(term_code, school_code, subject_code, catalog_number):
     data = {}
+    data['selected_term'] = term_code
+    data['selected_school'] = school_code
+    data['selected_subject'] = subject_code
+    data['selected_course'] = catalog_number
     data['courses'] = get_catalog_numbers(term_code, school_code, subject_code)  
     data['course_description'] = get_course_description(term_code, school_code, 
                                     subject_code, catalog_number)
     data['course_sections'] = get_sections(term_code, school_code, 
                                     subject_code, catalog_number)
     data['course_title'] = subject_code + ' ' + catalog_number
-        
     return render_template('course-info.html', **data)
     
 @app.route('/<term_code>/<school_code>/<subject_code>/<catalog_number>/<section_number>/')
 def section(term_code, school_code, subject_code, catalog_number, section_number):
     data = {}
+    data['selected_term'] = term_code
+    data['selected_school'] = school_code
+    data['selected_subject'] = subject_code
+    data['selected_course'] = catalog_number
+    data['selected_section'] = section_number
     data['courses'] = get_catalog_numbers(term_code, school_code, subject_code) 
     data['course_sections'] = get_sections(term_code, school_code, 
                                     subject_code, catalog_number)
@@ -195,9 +207,6 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
 @app.route('/about-us.html/')
 def about():
     data = {}
-
-    #if doesn't work, use an empty data
-
     return render_template('about-us.html', **data)  
 
 @app.route('/test.html')
