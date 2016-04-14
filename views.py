@@ -189,7 +189,23 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
     'WOMEN\'S HOSP': 'Women\'s Hospital',
     'WQ': 'West Quad',
 }
-                                                    
+    #url = ""
+    #for location in data[section_location]:
+        #if location == 'ARR' or location == 'TBA':
+         #   continue
+
+        #else:
+            #get building name, city and/or address to display a point on a map 
+                #<!-- get building abbreviation -->
+          #  location = location.split(' ', 1) 
+                    #<!-- match building abbreviation with building location -->
+         #   building_name = building_locations.get(location[1], None)
+
+        #url + building_name 
+
+
+
+
     return render_template('section-details.html', **data)  
 
 @app.route('/about-us.html/')
