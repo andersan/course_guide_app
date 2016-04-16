@@ -125,6 +125,9 @@ td {
 
 #header1 {
     text-align: center;
+    background: #E3E3E3;
+    color: #3D3D3D;
+    padding: 20px 0;
 }
 
 #body {
