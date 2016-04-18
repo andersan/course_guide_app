@@ -32,9 +32,7 @@
             </table>
         </div><!-- /.courseNav -->
         <div class="courseDetails">
-            <h1>The details for the selected section are:</h1>
-            
-            <h3> {{ section_details['CourseDescr'] }} </h3>
+            <h1> {{ section_details['CourseDescr'] }} </h1>
             <table>
                 <thead>
                     <tr>
@@ -91,8 +89,9 @@
                         </tr>
                 </tbody>    
             </table>
+            <h2>Location</h2>
             {% if section_location == 'ARR' or section_location == 'TBA' %}
-                Location to be announced
+                <p>Location to be announced</p>
             
             {% else %}
             <!-- get building name, city and/or address to display a point on a map -->
