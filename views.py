@@ -213,7 +213,7 @@ def about():
 def test():
     data = {}
     data['building_locations'] = {
-    'A&AB': 'Art and Architecture Building', #fix
+    'A&AB': 'Art and Architecture Building',
     'AH': 'Angell Hall',
     'AL': 'Walter E. Lay Automotive Lab',
     'ALH': 'Alice Lloyd Hall',
@@ -233,9 +233,9 @@ def test():
     'CAMP DAVIS': 'Camp Davis, Jackson Hole, Wyoming', #FIX
     'CCL': 'Clarence Cook Little Building',
     'CCRB': 'Central Campus Recreation Building',
-    'CHEM': 'Chemistry Building', #WIllard henry dow lab ok?
-    'CHRYS': 'Chrysler Center', #FIX: 2121 Bonisteel Blvd
-    'COMM PARK': 'Commerce Park, Dearborn', #FIX: 15041 S Commerce Dr. Dearborn, MI 48120
+    'CHEM': 'Chemistry Building', 
+    'CHRYS': 'Chrysler Center', 
+    'COMM PARK': '15041 S Commerce Dr. Dearborn, MI 48120', #FIX: 15041 S Commerce Dr. Dearborn, MI 48120
     'COOL': 'Cooley Building',
     'COUZENS': 'Couzens Hall',
     'CPH': 'Children\'s Psychiatric Hospital',
@@ -253,7 +253,7 @@ def test():
     'EQ': 'East Quadrangle',
     'ERB1': 'Engineering Research Building 1',
     'ERB2': 'Engineering Research Building 2',
-    'EWRE': 'Environmental and Water Resources Engineering Building', #FIX
+    'EWRE': 'Environmental and Water Resources Engineering Building', 
     'FA CAMP': 'Fresh Air Camp, Pinckney', #FIX
     'FORD LIB': 'Ford Library',
     'FXB': 'Francois-Xavier Bagnoud Building',
@@ -314,14 +314,14 @@ def test():
     'SHAPIRO': 'Shapiro Undergraduate Library',
     'SM': 'Earl V. Moore Building, School of Music',
     'SNB': 'School of Nursing Building',
-    'SPH1': 'Henry Vaughan Building', #may need fixing
+    'SPH1': 'Henry Vaughan Building', 
     'SPH2': 'Thomas Francis, Jr Building',
     'SRB': 'Space Research Building',
     'STB': '202 South Thayer Building',
     'STJOSEPH HOSP': 'St. Joseph Mercy Hospital',
     'STOCKWELL': 'Stockwell Hall',
     'STRNS': 'Sterns Building',
-    'T&TB': 'Track and Tennis Building', #FIX
+    'T&TB': 'Track and Tennis Building',
     'TAP': 'Tappan Hall',
     'TAUBL': 'Learning Resource Center, Taubman Medical Library',
     'TISCH': 'Tisch Hall',
