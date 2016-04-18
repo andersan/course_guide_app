@@ -175,6 +175,7 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
     'SHAPIRO': 'Shapiro Undergraduate Library',
     'SM': 'Earl V. Moore Building, School of Music',
     'SNB': 'School of Nursing Building',
+    'SNRE': 'Dana Samuel Trask Building (School of Natural Resources & Environment)', #FIX
     'SPH1': 'Henry Vaughan Building',
     'SPH2': 'Thomas Francis, Jr Building',
     'SRB': 'Space Research Building',
@@ -314,6 +315,7 @@ def test():
     'SHAPIRO': 'Shapiro Undergraduate Library',
     'SM': 'Earl V. Moore Building, School of Music',
     'SNB': 'School of Nursing Building',
+    'SNRE': 'Dana Samuel Trask Building (School of Natural Resources & Environment)', #FIX
     'SPH1': 'Henry Vaughan Building', #may need fixing
     'SPH2': 'Thomas Francis, Jr Building',
     'SRB': 'Space Research Building',
