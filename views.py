@@ -284,7 +284,7 @@ def test():
     'MH': 'Mason Hall',
     'MHRI': 'Mental Health Research Institute',
     'MLB': 'Modern Languages Building',
-    'MONROECTY HD': 'Monroe County Health Department', #FIX: 2353 S custer Rd, Monroe< MI 48161
+    'MONROECTY HD': 'Monroe County Health Department', #FIX: 2353 S custer Rd, Monroe MI 48161
     'MOSHER': 'Mosher Jordan Hall',
     'MOTT': 'C.S. Mott Children\'s Hospital',
     'MSC1': 'Medical Science, Building I', #FIX
@@ -329,7 +329,7 @@ def test():
     'UMMA': 'University of Michigan Museum of Art (Alumni Memorial Hall)',
     'UNION': 'Michigan Union',
     'USB': 'Undergraduate Science Building',
-    'UTOWER': 'University Towers, 1225 S. University',
+    'UTOWER': 'University Towers, 1225 S. University', #fix
     'VETERANSHOSP': 'Veterans Administration Hospital',
     'WASHCTY HD': 'Washtenaw County Health Department', #FIX
     'W-BUS': 'Wyly Hall',
