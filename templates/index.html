@@ -11,9 +11,13 @@
     <h1>The Root of All Courses</h1>
     <h2>Select a term</h2>
 
+    <div class="terms">
     {% for term in terms %}
-        <a class="term" href="/{{ term['TermCode'] }}/">{{ term['TermDescr'] }}</a><br />
+        <a class="term" href="/{{ term['TermCode'] }}/"><span>{{ term['TermDescr'] }}</span></a>
     {% endfor %}
+        <div class="clear"></div>
+    </div>
+    
     
     <script type="text/javascript">
         $(".term:contains('Fall')").addClass("fall");
