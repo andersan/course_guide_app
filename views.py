@@ -102,6 +102,7 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
     'CPH': 'Children\'s Psychiatric Hospital',
     'CRISLER': 'Crisler Arena',
     'CCSB': 'Campus Safety Services Building, 1239 Kipke Dr.',
+    'DANA': 'Dana Building (School of Natural Resources & Environment)',
     'DANCE': 'Dance Building, 1310 N. University Court',
     'DC': 'Duderstadt Center',
     'DENN': 'David M. Dennison Building (Weiser Hall)',
