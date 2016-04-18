@@ -135,7 +135,7 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
     'LBME': 'Lurie Biomedical Engineering Building,Ann+Arbor+MI',
     'LEAG': 'Michigan League,Ann+Arbor+MI',
     'LEC': 'Lurie Engineering Center,Ann+Arbor+MI',
-    'LLIB': 'Law Library,Ann+Arbor+MI', #FIX
+    'LLIB': '913+S+University Ave,Ann+Arbor+MI', #FIXED? Law Library
     'LORCH': 'Lorch Hall,Ann+Arbor+MI',
     'LSA': 'Literature, Science, and the Arts Building,Ann+Arbor+MI',
     'LSI': 'Life Sciences Institute,Ann+Arbor+MI',
@@ -167,10 +167,10 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
     'RACK': 'Horace H. Rackham, School of Graduate Studies,Ann+Arbor+MI',
     'RAND': 'Randall Laboratory,Ann+Arbor+MI',
     'R-BUS': 'Ross School of Business Building,Ann+Arbor+MI',
-    'REVELLI': 'William D. Revelli Hall,Ann+Arbor+MI', #FIX
+    'REVELLI': '350+E.+Hoover,Ann+Arbor+MI', #FIXED? William D. Revelli Hall
     'ROSS AC': 'Stephen M. Ross Academic Center,Ann+Arbor+MI',
     'RUTHVEN': 'A. G. Ruthven Museums Building,Ann+Arbor+MI',
-    'SCHEM': 'Glenn E. Schembechler Hall,Ann+Arbor+MI', #FIX
+    'SCHEM': '1200+S+State+St,Ann+Arbor+MI', #FIXED? Glenn E. Schembechler Hall
     'SEB': 'School of Education Building,Ann+Arbor+MI',
     'SHAPIRO': 'Shapiro Undergraduate Library,Ann+Arbor+MI',
     'SM': 'Earl V. Moore Building, School of Music,Ann+Arbor+MI',
@@ -192,9 +192,9 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
     'USB': 'Undergraduate Science Building,Ann+Arbor+MI',
     'UTOWER': 'University Towers, 1225 S. University,Ann+Arbor+MI',
     'VETERANSHOSP': 'Veterans Administration Hospital,Ann+Arbor+MI',
-    'WASHCTY HD': 'Washtenaw County Health Department,Ann+Arbor+MI', #FIX
+    'WASHCTY HD': '555+Towner+Ave.+,Ypsilanti+MI', #FIXED? Washtenaw County Health Department
     'W-BUS': 'Wyly Hall,Ann+Arbor+MI',
-    'WDC': '1226 Murfin Ave,Ann+Arbor+MI', #FIX: 1226 Murfin AVE, Charles R. Walgreen, Jr. Drama Center
+    'WDC': '1226+Murfin+Ave,Ann+Arbor+MI', #FIXED?: 1226 Murfin AVE, Charles R. Walgreen, Jr. Drama Center
     'WEILL': 'Joan and Sanford Weill Hall,Ann+Arbor+MI', #FIX
     'WEIS': 'Weiser Hall,Ann+Arbor+MI',
     'WH': 'West Hall,Ann+Arbor+MI',
