@@ -218,7 +218,7 @@ def test():
     'AL': 'Walter E. Lay Automotive Lab,Ann+Arbor+MI',
     'ALH': 'Alice Lloyd Hall,Ann+Arbor+MI',
     'ANNEX': '1015 E. Huron,Ann+Arbor+MI', #fixed?
-    'ARGUS2': '408 S. Fourth Street,Ann+Arbor+MI', #fixed?
+    'ARGUS2': '408+S+4th+St,Ann+Arbor+MI', #fixed?
     'ARGUS3': 'Argus Building III, 416 S. Fourth Street,Ann+Arbor+MI',
     'ARR': 'Location to be Arranged',
     'BAM HALL': 'Blanch Anderson Moore Hall, School of Music,Ann+Arbor+MI', #FIX
