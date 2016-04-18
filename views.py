@@ -293,8 +293,8 @@ def test():
     'NAME': 'Naval Architecture and Marine Engineering Building,Ann+Arbor+MI',
     'NCRB': 'North Campus Recreation Building,Ann+Arbor+MI',
     'NCRC': 'North Campus Research Complex,Ann+Arbor+MI',
-    'NIB': '300 North Ingalls Building,Ann+Arbor+MI',
-    '400NI': '400 North Ingalls Building,Ann+Arbor+MI',
+    'NIB': '300+North+Ingalls+Building,Ann+Arbor+MI',
+    '400NI': '400+North+Ingalls+Building,Ann+Arbor+MI',
     'NORTHVILLEPH': 'Northville State Hospital,Northville+MI', #does this work?
     'NQ': 'North Quad,Ann+Arbor+MI',
     'NS': 'Edward Henry Kraus Natural Science Building,Ann+Arbor+MI',
