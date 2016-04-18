@@ -175,7 +175,6 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
     'SHAPIRO': 'Shapiro Undergraduate Library',
     'SM': 'Earl V. Moore Building, School of Music',
     'SNB': 'School of Nursing Building',
-    'SNRE': 'Dana Samuel Trask Building (School of Natural Resources and Environment)', #FIX
     'SPH1': 'Henry Vaughan Building',
     'SPH2': 'Thomas Francis, Jr Building',
     'SRB': 'Space Research Building',
@@ -218,7 +217,7 @@ def test():
     'AH': 'Angell Hall',
     'AL': 'Walter E. Lay Automotive Lab',
     'ALH': 'Alice Lloyd Hall',
-    'ANNEX': 'Public Policy Annex, 1015 E. Huron',
+    'ANNEX': 'Public Policy Annex, 1015 E. Huron', #fix
     'ARGUS2': 'Argus Building II, Television Center, 408 S. Fourth Street', #fix
     'ARGUS3': 'Argus Building III, 416 S. Fourth Street',
     'ARR': 'Location to be Arranged',
@@ -242,7 +241,7 @@ def test():
     'CPH': 'Children\'s Psychiatric Hospital',
     'CRISLER': 'Crisler Arena',
     'CCSB': 'Campus Safety Services Building, 1239 Kipke Dr.',
-    'DANA': 'Dana Building (School of Natural Resources and Environment)', #FIX
+    'DANA': 'Dana Building (School of Natural Resources and Environment)',
     'DANCE': 'Dance Building, 1310 N. University Court',
     'DC': 'Duderstadt Center',
     'DENN': 'David M. Dennison Building (Weiser Hall)',
@@ -285,18 +284,18 @@ def test():
     'MH': 'Mason Hall',
     'MHRI': 'Mental Health Research Institute',
     'MLB': 'Modern Languages Building',
-    'MONROECTY HD': 'Monroe County Health Department', #FIX
+    'MONROECTY HD': 'Monroe County Health Department', #FIX: 2353 S custer Rd, Monroe< MI 48161
     'MOSHER': 'Mosher Jordan Hall',
     'MOTT': 'C.S. Mott Children\'s Hospital',
     'MSC1': 'Medical Science, Building I', #FIX
-    'MSC2': 'Medical Science, Building II', #FIX
-    'MSRB3': 'Medical Science Research, Building III', #FIX
+    'MSC2': 'Medical Science Building II', #FIX
+    'MSRB3': 'Medical Science Research Building III', #FIX
     'NAME': 'Naval Architecture and Marine Engineering Building',
     'NCRB': 'North Campus Recreation Building',
     'NCRC': 'North Campus Research Complex',
     'NIB': '300 North Ingalls Building',
     '400NI': '400 North Ingalls Building',
-    'NORTHVILLEPH': 'Northville State Hospital', #should this be the pychiatric hospital??
+    'NORTHVILLEPH': 'Northville State Hospital',
     'NQ': 'North Quad',
     'NS': 'Edward Henry Kraus Natural Science Building',
     'OBL': 'Observatory Lodge, 1402 Washington Heights',
@@ -315,7 +314,6 @@ def test():
     'SHAPIRO': 'Shapiro Undergraduate Library',
     'SM': 'Earl V. Moore Building, School of Music',
     'SNB': 'School of Nursing Building',
-    'SNRE': 'Dana Samuel Trask Building (School of Natural Resources and Environment)', #FIX
     'SPH1': 'Henry Vaughan Building', #may need fixing
     'SPH2': 'Thomas Francis, Jr Building',
     'SRB': 'Space Research Building',
@@ -341,7 +339,6 @@ def test():
     'WH': 'West Hall',
     'WOMEN\'S HOSP': 'Women\'s Hospital',
     'WQ': 'West Quad',
-    #Public policy annex, 1015 E Huron wrong
 }
     # need to iterate through all pairs in our large dict and make sure they work
 
