@@ -217,7 +217,7 @@ def test():
     'AH': 'Angell Hall,Ann+Arbor+MI',
     'AL': 'Walter E. Lay Automotive Lab,Ann+Arbor+MI',
     'ALH': 'Alice Lloyd Hall,Ann+Arbor+MI',
-    'ANNEX': '1015 E. Huron,Ann+Arbor+MI', #fixed?
+    'ANNEX': '1015+E+Huron,Ann+Arbor+MI', #fixed?
     'ARGUS2': '408+S+4th+St,Ann+Arbor+MI', #fixed?
     'ARGUS3': 'Argus Building III, 416 S. Fourth Street,Ann+Arbor+MI',
     'ARR': 'Location to be Arranged',
@@ -229,11 +229,11 @@ def test():
     'BOT GARD': 'Matthaei Botanical Gardens, Dixboro Road,Ann+Arbor+MI',
     'BSRB': 'Biomedical Science Research Building,Ann+Arbor+MI',
     'BURS': 'Bursley Hall,Ann+Arbor+MI',
-    'BUS': 'Business Administration,Ann+Arbor+MI',
+    'BUS': 'Business Administration,Ann+Arbor+MI', # same building as kresge library in our maps - is that correct?
     'CAMP DAVIS': 'Camp Davis, Jackson+Hole+Wyoming', #FIXED?
     'CCL': 'Clarence Cook Little Building,Ann+Arbor+MI',
     'CCRB': 'Central Campus Recreation Building,Ann+Arbor+MI',
-    'CHEM': 'Chemistry Building,Ann+Arbor+MI', 
+    'CHEM': 'Chemistry Building,Ann+Arbor+MI', # displays the wrong name (some lab inside chem building)
     'CHRYS': 'Chrysler Center,Ann+Arbor+MI', 
     'COMM PARK': '15041 S Commerce Dr.,Dearborn+MI+48120', #FIXED?: 15041 S Commerce Dr. Dearborn, MI 48120
     'COOL': 'Cooley Building,Ann+Arbor+MI',
@@ -247,7 +247,7 @@ def test():
     'DENN': 'David M. Dennison Building (Weiser Hall),Ann+Arbor+MI',
     'DENT': 'Dental Building,Ann+Arbor+MI',
     'DOW': 'Dow Engineering Building,Ann+Arbor+MI',
-    'E-BUS': 'Executive Education,Ann+Arbor+MI',
+    'E-BUS': 'Executive Education,Ann+Arbor+MI', # what is this????
     'EECS': 'Electrical Engineering and Computer Science Building,Ann+Arbor+MI',
     'EH': 'East Hall,Ann+Arbor+MI',
     'EQ': 'East Quadrangle,Ann+Arbor+MI',
