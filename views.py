@@ -74,7 +74,7 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
 # concerns with location dict: DENT (renamed to Weiser), buildings that are not in Ann Arbor, names with apostrophes, locations that still need to be arranged
 
     data['building_locations'] = {
-    'A&AB': 'Art & Architecture Building',
+    'A&AB': 'Art and Architecture Building',
     'AH': 'Angell Hall',
     'AL': 'Walter E. Lay Automotive Lab',
     'ALH': 'Alice Lloyd Hall',
@@ -96,13 +96,13 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
     'CCRB': 'Central Campus Recreation Building',
     'CHEM': 'Chemistry Building',
     'CHRYS': 'Chrysler Center',
-    'COMM PARK': 'Commerce Park, Dearborn',
+    'COMM PARK': 'Commerce Park, Dearborn', #unsure where this is
     'COOL': 'Cooley Building',
     'COUZENS': 'Couzens Hall',
     'CPH': 'Children\'s Psychiatric Hospital',
     'CRISLER': 'Crisler Arena',
     'CCSB': 'Campus Safety Services Building, 1239 Kipke Dr.',
-    'DANA': 'Dana Building (School of Natural Resources & Environment)',
+    'DANA': 'Dana Building (School of Natural Resources and Environment)',
     'DANCE': 'Dance Building, 1310 N. University Court',
     'DC': 'Duderstadt Center',
     'DENN': 'David M. Dennison Building (Weiser Hall)',
@@ -114,8 +114,8 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
     'EQ': 'East Quadrangle',
     'ERB1': 'Engineering Research Building 1',
     'ERB2': 'Engineering Research Building 2',
-    'EWRE': 'Environmental & Water Resources Engineering Building',
-    'FA CAMP': 'Fresh Air Camp, Pinckney',
+    'EWRE': 'Environmental and Water Resources Engineering Building',
+    'FA CAMP': 'Fresh Air Camp, Pinckney', # is this correct??
     'FORD LIB': 'Ford Library',
     'FXB': 'Francois-Xavier Bagnoud Building',
     'GFL': 'Gorguze Family Laboratory',
@@ -175,7 +175,7 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
     'SHAPIRO': 'Shapiro Undergraduate Library',
     'SM': 'Earl V. Moore Building, School of Music',
     'SNB': 'School of Nursing Building',
-    'SNRE': 'Dana Samuel Trask Building (School of Natural Resources & Environment)', #FIX
+    'SNRE': 'Dana Samuel Trask Building (School of Natural Resources and Environment)', #FIX
     'SPH1': 'Henry Vaughan Building',
     'SPH2': 'Thomas Francis, Jr Building',
     'SRB': 'Space Research Building',
@@ -183,7 +183,7 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
     'STJOSEPH HOSP': 'St. Joseph Mercy Hospital',
     'STOCKWELL': 'Stockwell Hall',
     'STRNS': 'Sterns Building',
-    'T&TB': 'Track & Tennis Building',
+    'T&TB': 'Track and Tennis Building',
     'TAP': 'Tappan Hall',
     'TAUBL': 'Learning Resource Center, Taubman Medical Library',
     'TISCH': 'Tisch Hall',
@@ -214,7 +214,7 @@ def about():
 def test():
     data = {}
     data['building_locations'] = {
-    'A&AB': 'Art & Architecture Building', #fix
+    'A&AB': 'Art and Architecture Building', #fix
     'AH': 'Angell Hall',
     'AL': 'Walter E. Lay Automotive Lab',
     'ALH': 'Alice Lloyd Hall',
@@ -242,7 +242,7 @@ def test():
     'CPH': 'Children\'s Psychiatric Hospital',
     'CRISLER': 'Crisler Arena',
     'CCSB': 'Campus Safety Services Building, 1239 Kipke Dr.',
-    'DANA': 'Dana Building (School of Natural Resources & Environment)', #FIX
+    'DANA': 'Dana Building (School of Natural Resources and Environment)', #FIX
     'DANCE': 'Dance Building, 1310 N. University Court',
     'DC': 'Duderstadt Center',
     'DENN': 'David M. Dennison Building (Weiser Hall)',
@@ -254,7 +254,7 @@ def test():
     'EQ': 'East Quadrangle',
     'ERB1': 'Engineering Research Building 1',
     'ERB2': 'Engineering Research Building 2',
-    'EWRE': 'Environmental & Water Resources Engineering Building', #FIX
+    'EWRE': 'Environmental and Water Resources Engineering Building', #FIX
     'FA CAMP': 'Fresh Air Camp, Pinckney', #FIX
     'FORD LIB': 'Ford Library',
     'FXB': 'Francois-Xavier Bagnoud Building',
@@ -315,7 +315,7 @@ def test():
     'SHAPIRO': 'Shapiro Undergraduate Library',
     'SM': 'Earl V. Moore Building, School of Music',
     'SNB': 'School of Nursing Building',
-    'SNRE': 'Dana Samuel Trask Building (School of Natural Resources & Environment)', #FIX
+    'SNRE': 'Dana Samuel Trask Building (School of Natural Resources and Environment)', #FIX
     'SPH1': 'Henry Vaughan Building', #may need fixing
     'SPH2': 'Thomas Francis, Jr Building',
     'SRB': 'Space Research Building',
@@ -323,7 +323,7 @@ def test():
     'STJOSEPH HOSP': 'St. Joseph Mercy Hospital',
     'STOCKWELL': 'Stockwell Hall',
     'STRNS': 'Sterns Building',
-    'T&TB': 'Track & Tennis Building', #FIX
+    'T&TB': 'Track and Tennis Building', #FIX
     'TAP': 'Tappan Hall',
     'TAUBL': 'Learning Resource Center, Taubman Medical Library',
     'TISCH': 'Tisch Hall',
