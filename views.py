@@ -213,35 +213,35 @@ def about():
 def test():
     data = {}
     data['building_locations'] = {
-    'A&AB': 'Art & Architecture Building',
+    'A&AB': 'Art & Architecture Building', #fix
     'AH': 'Angell Hall',
     'AL': 'Walter E. Lay Automotive Lab',
     'ALH': 'Alice Lloyd Hall',
     'ANNEX': 'Public Policy Annex, 1015 E. Huron',
-    'ARGUS2': 'Argus Building II, Television Center, 408 S. Fourth Street',
+    'ARGUS2': 'Argus Building II, Television Center, 408 S. Fourth Street', #fix
     'ARGUS3': 'Argus Building III, 416 S. Fourth Street',
     'ARR': 'Location to be Arranged',
-    'BAM HALL': 'Blanch Anderson Moore Hall, School of Music',
-    'BELL POOL': 'Margaret Bell Pool, Central Campus Recreation Building',
+    'BAM HALL': 'Blanch Anderson Moore Hall, School of Music', #FIX
+    'BELL POOL': 'Margaret Bell Pool, Central Campus Recreation Building', #FIX
     'BEYST': 'Bob and Betty Beyster Building',
-    'BIOL STAT': 'Biological Station, Pellston',
+    'BIOL STAT': 'Biological Station, Pellston', #FIX: one in pellston
     'BMT': 'Burton Memorial Tower',
     'BOT GARD': 'Matthaei Botanical Gardens, Dixboro Road',
     'BSRB': 'Biomedical Science Research Building',
     'BURS': 'Bursley Hall',
     'BUS': 'Business Administration',
-    'CAMP DAVIS': 'Camp Davis, Jackson Hole, Wyoming',
+    'CAMP DAVIS': 'Camp Davis, Jackson Hole, Wyoming', #FIX
     'CCL': 'Clarence Cook Little Building',
     'CCRB': 'Central Campus Recreation Building',
-    'CHEM': 'Chemistry Building',
-    'CHRYS': 'Chrysler Center',
-    'COMM PARK': 'Commerce Park, Dearborn',
+    'CHEM': 'Chemistry Building', #WIllard henry dow lab ok?
+    'CHRYS': 'Chrysler Center', #FIX: 2121 Bonisteel Blvd
+    'COMM PARK': 'Commerce Park, Dearborn', #FIX: 15041 S Commerce Dr. Dearborn, MI 48120
     'COOL': 'Cooley Building',
     'COUZENS': 'Couzens Hall',
     'CPH': 'Children\'s Psychiatric Hospital',
     'CRISLER': 'Crisler Arena',
     'CCSB': 'Campus Safety Services Building, 1239 Kipke Dr.',
-    'DANA': 'Dana Building (School of Natural Resources & Environment)',
+    'DANA': 'Dana Building (School of Natural Resources & Environment)', #FIX
     'DANCE': 'Dance Building, 1310 N. University Court',
     'DC': 'Duderstadt Center',
     'DENN': 'David M. Dennison Building (Weiser Hall)',
@@ -253,8 +253,8 @@ def test():
     'EQ': 'East Quadrangle',
     'ERB1': 'Engineering Research Building 1',
     'ERB2': 'Engineering Research Building 2',
-    'EWRE': 'Environmental & Water Resources Engineering Building',
-    'FA CAMP': 'Fresh Air Camp, Pinckney',
+    'EWRE': 'Environmental & Water Resources Engineering Building', #FIX
+    'FA CAMP': 'Fresh Air Camp, Pinckney', #FIX
     'FORD LIB': 'Ford Library',
     'FXB': 'Francois-Xavier Bagnoud Building',
     'GFL': 'Gorguze Family Laboratory',
@@ -269,33 +269,33 @@ def test():
     'KEC': 'Kellogg Eye Center',
     'KEENE THTR EQ': 'Keene Theater, Residential College, East Quadrangle',
     'KELSEY': 'Kelsey Museum of Archaeology',
-    'KHRI': 'Kresge Hearing Research Institute',
+    'KHRI': 'Kresge Hearing Research Institute', #FIX
     'LANE': 'Lane Hall',
     'LBME': 'Lurie Biomedical Engineering Building',
     'LEAG': 'Michigan League',
     'LEC': 'Lurie Engineering Center',
-    'LLIB': 'Law Library',
+    'LLIB': 'Law Library', #FIX
     'LORCH': 'Lorch Hall',
     'LSA': 'Literature, Science, and the Arts Building',
     'LSI': 'Life Sciences Institute',
     'LSSH': 'Law School South Hall',
     'MARKLEY': 'Mary Markley Hall',
-    'MAX KADE': 'Max Kade House, 627 Oxford Street',
+    'MAX KADE': 'Max Kade House, 627 Oxford Street', #FIX
     'MH': 'Mason Hall',
     'MHRI': 'Mental Health Research Institute',
     'MLB': 'Modern Languages Building',
-    'MONROECTY HD': 'Monroe County Health Department',
+    'MONROECTY HD': 'Monroe County Health Department', #FIX
     'MOSHER': 'Mosher Jordan Hall',
     'MOTT': 'C.S. Mott Children\'s Hospital',
-    'MSC1': 'Medical Science, Building I',
-    'MSC2': 'Medical Science, Building II',
-    'MSRB3': 'Medical Science Research, Building III',
+    'MSC1': 'Medical Science, Building I', #FIX
+    'MSC2': 'Medical Science, Building II', #FIX
+    'MSRB3': 'Medical Science Research, Building III', #FIX
     'NAME': 'Naval Architecture and Marine Engineering Building',
     'NCRB': 'North Campus Recreation Building',
     'NCRC': 'North Campus Research Complex',
     'NIB': '300 North Ingalls Building',
     '400NI': '400 North Ingalls Building',
-    'NORTHVILLEPH': 'Northville State Hospital',
+    'NORTHVILLEPH': 'Northville State Hospital', #should this be the pychiatric hospital??
     'NQ': 'North Quad',
     'NS': 'Edward Henry Kraus Natural Science Building',
     'OBL': 'Observatory Lodge, 1402 Washington Heights',
@@ -306,22 +306,22 @@ def test():
     'RACK': 'Horace H. Rackham, School of Graduate Studies',
     'RAND': 'Randall Laboratory',
     'R-BUS': 'Ross School of Business Building',
-    'REVELLI': 'William D. Revelli Hall',
+    'REVELLI': 'William D. Revelli Hall', #FIX
     'ROSS AC': 'Stephen M. Ross Academic Center',
     'RUTHVEN': 'A. G. Ruthven Museums Building',
-    'SCHEM': 'Glenn E. Schembechler Hall',
+    'SCHEM': 'Glenn E. Schembechler Hall', #FIX
     'SEB': 'School of Education Building',
     'SHAPIRO': 'Shapiro Undergraduate Library',
     'SM': 'Earl V. Moore Building, School of Music',
     'SNB': 'School of Nursing Building',
-    'SPH1': 'Henry Vaughan Building',
+    'SPH1': 'Henry Vaughan Building', #may need fixing
     'SPH2': 'Thomas Francis, Jr Building',
     'SRB': 'Space Research Building',
     'STB': '202 South Thayer Building',
     'STJOSEPH HOSP': 'St. Joseph Mercy Hospital',
     'STOCKWELL': 'Stockwell Hall',
     'STRNS': 'Sterns Building',
-    'T&TB': 'Track & Tennis Building',
+    'T&TB': 'Track & Tennis Building', #FIX
     'TAP': 'Tappan Hall',
     'TAUBL': 'Learning Resource Center, Taubman Medical Library',
     'TISCH': 'Tisch Hall',
@@ -331,14 +331,15 @@ def test():
     'USB': 'Undergraduate Science Building',
     'UTOWER': 'University Towers, 1225 S. University',
     'VETERANSHOSP': 'Veterans Administration Hospital',
-    'WASHCTY HD': 'Washtenaw County Health Department',
+    'WASHCTY HD': 'Washtenaw County Health Department', #FIX
     'W-BUS': 'Wyly Hall',
-    'WDC': 'Charles R. Walgreen, Jr. Drama Center',
-    'WEILL': 'Joan and Sanford Weill Hall',
+    'WDC': 'Charles R. Walgreen, Jr. Drama Center', #FIX: 1226 Murfin AVE
+    'WEILL': 'Joan and Sanford Weill Hall', #FIX
     'WEIS': 'Weiser Hall',
     'WH': 'West Hall',
     'WOMEN\'S HOSP': 'Women\'s Hospital',
     'WQ': 'West Quad',
+    #Public policy annex, 1015 E Huron wrong
 }
     # need to iterate through all pairs in our large dict and make sure they work
 
