@@ -67,7 +67,7 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
     data['section_details'] = get_section_details(term_code, school_code, 
                                     subject_code, catalog_number, section_number)
     data['section_location'] = get_meetings(term_code, school_code, subject_code,
-                                    catalog_number, section_number)[0]['Location']
+                                    catalog_number, section_number)[1]['Location']
 
 # building abbreviations from the office of the registrar
 
