@@ -288,9 +288,9 @@ def test():
     'MONROECTY HD': '2353+S+Custer+Rd,Monroe+MI+48161', #FIXED?: Monroe County Health Department, 2353 S custer Rd, Monroe< MI 48161
     'MOSHER': 'Mosher Jordan Hall,Ann+Arbor+MI',
     'MOTT': 'C.S. Mott Children\'s Hospital,Ann+Arbor+MI',
-    'MSC1': 'Medical Science, Building I,Ann+Arbor+MI', #FIX
-    'MSC2': 'Medical Science Building II,Ann+Arbor+MI', #FIX
-    'MSRB3': 'Medical Science Research Building III,Ann+Arbor+MI', #FIX
+    'MSC1': '1150+W+MEDICAL+CENTER+DR,Ann+Arbor+MI', #FIXED? Medical Science, Building I
+    'MSC2': '1137+CATHERINE+ST,Ann+Arbor+MI', #FIXED? Medical Science Building II
+    'MSRB3': '1150+W+MEDICAL+CENTER+DR,Ann+Arbor+MI', #FIXED? Medical Science Research Building III
     'NAME': 'Naval Architecture and Marine Engineering Building,Ann+Arbor+MI',
     'NCRB': 'North Campus Recreation Building,Ann+Arbor+MI',
     'NCRC': 'North Campus Research Complex,Ann+Arbor+MI',
