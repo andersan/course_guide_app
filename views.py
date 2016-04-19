@@ -197,7 +197,7 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
     'W-BUS': 'Wyly Hall,Ann+Arbor+MI',
     'WDC': '1226+Murfin+Ave,Ann+Arbor+MI', #FIXED?: 1226 Murfin AVE, Charles R. Walgreen, Jr. Drama Center
     'WEILL': '735+STATE+ST,Ann+Arbor+MI', #FIXED? Joan and Sanford Weill Hall
-    'WEIS': 'Weiser Hall,Ann+Arbor+MI',
+    'WEIS': 'Weiser Hall+Ann+Arbor+MI',
     'WH': 'West Hall,Ann+Arbor+MI',
     'WOMEN\'S HOSP': 'Women\'s Hospital,Ann+Arbor+MI',
     'WQ': 'West Quad,Ann+Arbor+MI'
