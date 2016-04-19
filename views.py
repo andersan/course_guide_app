@@ -67,12 +67,12 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
                                     catalog_number, section_number)
     data['section_details'] = get_section_details(term_code, school_code, 
                                     subject_code, catalog_number, section_number)
-    data['section_location'] = get_meetings(term_code, school_code, subject_code,
-                                    catalog_number, section_number)[0]['Location']
+    data['section_meeting'] = get_meetings(term_code, school_code, subject_code,
+                                    catalog_number, section_number)
+    for meeting in section_meeting 
+        data['section_location'] = meeting['Location']
 
 # building abbreviations from the office of the registrar
-
-# concerns with location dict: DENT (renamed to Weiser), buildings that are not in Ann Arbor, names with apostrophes, locations that still need to be arranged
 
     data['building_locations'] = {
     'A&AB': 'Art and Architecture Building,Ann+Arbor+MI',
