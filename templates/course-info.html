@@ -15,24 +15,22 @@
         <span class="item">{{ selected_course }}</span>
     </div>
     
-    <div class="courseWrap">
+    <div class="pageWrap">
     
-        <div class="courseNav">
-            <h2>Courses</h2>
-            <table>
+        <div class="sidebar">
+            <h3>Courses</h3>
+            <ul class="subnav">
                 {% for course in courses %}
-                <tr>  
-                    <td>
-                        <a href="../{{ course['CatalogNumber'] }}/">
-                            {{ course['CourseTitle'] }}
-                        </a>
-                    </td>
-                </tr>    
+                <li>
+                    <a href="../{{ course['CatalogNumber'] }}/">
+                        {{ course['CourseTitle'] }}
+                    </a>
+                </li>  
                 {% endfor %}
-            </table>
+            </ul>
         </div><!-- /.courseNav -->
     
-        <div class="courseDetails">
+        <div class="content">
             <h1> {{ course_title }} </h3>
 
             <p> {{ course_description }} </p>
@@ -68,8 +66,8 @@
 
 
             </table>
-        </div><!-- /.courseDetails -->  
-    </div><!-- /.courseWrap -->
+        </div><!-- /.content -->  
+    </div><!-- /.pageWrap -->
     
     <div class="clear"></div>
 

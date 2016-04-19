@@ -9,15 +9,28 @@
 {% block content %}
 
     <div class="breadcrumbs">
-        <a class="item {{ selected_term }}">{{ selected_term }}</a>
+        <span class="item {{ selected_term }}">{{ selected_term }}</span>
     </div>
+    
+    <div class="pageWrap">
 
-    <h1>The schools returned for the selected term are:</h1>
-
-    {% for school in schools %}
-        <a href="{{ school['SchoolCode'] }}/">
-            {{ school['SchoolDescr'] }}
-        </a><br />
-    {% endfor %}
+        <div class="sidebar">
+            <h3>Schools:</h3>
+            <ul class="subnav">
+            {% for school in schools %}
+                <li>
+                    <a href="{{ school['SchoolCode'] }}/">
+                        {{ school['SchoolDescr'] }}
+                    </a>
+                </li>
+            {% endfor %}
+            </ul>
+        </div><!-- /.sidebar -->
+        
+        <div class="content">
+            <h1>Select a school.</h1>
+        </div><!-- /.content -->
+    
+    </div><!-- .pageWrap -->
 
 {% endblock %}

@@ -9,10 +9,28 @@ html, body {
 
 h1 {
     font-size: 24px;
+    margin: 20px 0 15px 0;
 }
     h1:first-child {
         margin-top: 0;
     }
+h2:first-child {
+    margin-top: 0;
+}
+h2 {
+    font-size: 18px;
+    margin: 25px 0 10px 0;
+}
+.subhead {
+    font-size: 17px;
+    font-weight: normal;
+    margin: -13px 0 20px 0;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 16px;
+    margin: 15px 0 10px 0;
+}
 p {
     margin: 15px 0;
 }
@@ -32,6 +50,7 @@ table {
     margin: 0;
     padding: 0;
     text-align: left;
+    width: 100%;
 }
 th {
     background: #e0e0e0;
@@ -99,6 +118,10 @@ td {
     border-bottom: solid 1px #e0e0e0;
     padding-bottom: 10px;
 }    
+    .breadcrumbs span {
+        color: #333;
+        font-weight: bold;
+    }
     
 #content {
     padding: 20px 0;
@@ -109,27 +132,56 @@ td {
         margin: 0 auto;
         padding: 20px; 
     }
+    
+.pageWrap {
+    display: table;
+    width: 100%;
+}
+.content {
+    display: table-cell;
+    padding-left: 30px;
+    padding-top: 30px;
+    vertical-align: top;
+}
+.sidebar {
+    display: table-cell;
+    padding-top: 10px;
+    width: 250px;
+    vertical-align: top;
+}
+    .sidebar h3 {
+        margin: 0 0 5px 0;
+    }
+.subnav {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+}    
+    .subnav li {
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .subnav li a {
+        background: #f4f4f4;
+        border-left: solid 4px #ccc;
+        display: block;
+        margin: 1px 0;
+        padding: 5px 10px;
+    }
+    .subnav li a:hover {
+        background: #ccc;
+        border-left: solid 4px #333;
+        color: #000;
+        text-decoration: none;
+    }
+    
 #footer {
     background: #333;
     color: #ccc;
     line-height: 60px;
     text-align: center;
-}
-
-.courseWrap {
-    display: table;
-    width: 100%;
-}
-.courseNav {
-    display: table-cell;
-    width: 200px;
-}
-.courseNav table {
-    width: 100%;
-}
-.courseDetails {
-    display: table-cell;
-    padding-left: 30px;
 }
 
 #header1 {
@@ -141,6 +193,17 @@ td {
 
 #body {
     text-align: center;
+}
+
+.enrollment {
+    background: #f4f4f4;
+    display: inline-block;
+    line-height: 1.7;
+    margin: 20px 0;
+    padding: 10px 13px;
+}
+.enrollment strong {
+    display: inline-block;
 }
 
 /* term thumbnails */

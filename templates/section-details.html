@@ -16,23 +16,23 @@
         <span class="item">{{ selected_section }}</span>
     </div>
 
-    <div class="courseWrap">
-        <div class="courseNav">
-            <h2>Courses</h2>
-            <table>
+    <div class="pageWrap">
+        <div class="sidebar">
+            <h3>Courses</h3>
+            <ul class="subnav">
                 {% for course in courses %}
-                <tr>  
-                    <td>
-                        <a href="../../{{ course['CatalogNumber'] }}/">
-                            {{ course['CourseTitle'] }}
-                        </a>
-                    </td>
-                </tr>
+                <li>  
+                    <a href="../../{{ course['CatalogNumber'] }}/">
+                        {{ course['CourseTitle'] }}
+                    </a>
+                </li>
                 {% endfor %}
-            </table>
-        </div><!-- /.courseNav -->
-        <div class="courseDetails">
-            <h1> {{ section_details['CourseDescr'] }} </h1>
+            </ul>
+        </div><!-- /.sidebar -->
+        <div class="content">
+            <h1>{{ section_details['CourseDescr'] }}</h1>
+            <h2 class="subhead">Section {{ selected_section }}</h2> 
+            
             <table>
                 <thead>
                     <tr>
@@ -44,55 +44,37 @@
                     </tr>
                 </thead>
                 <tbody>
-
-                    <!-- do we need a for loop? or is there always only one meeting?? -->
-                    {% for meeting in section_meetings %}
-                        <tr>
-                            <td>
-                                {{ meeting['InstructorName'] }}
-                            </td>
-                            <td>
-                                {{ meeting['MeetingNumber'] }}
-                            </td>
-                            <td>
-                                {{ meeting['Location'] }}
-                            </td>
-                            <td>
-                                {{ meeting['Times'] }}
-                            </td>
-                            <td>
-                                {{ meeting['Days'] }}
-                            </td>
-                        </tr>
-                    {% endfor %}
+                {% for meeting in section_meetings %}
+                    <tr>
+                        <td>
+                            {{ meeting['InstructorName'] }}
+                        </td>
+                        <td>
+                            {{ meeting['MeetingNumber'] }}
+                        </td>
+                        <td>
+                            {{ meeting['Location'] }}
+                        </td>
+                        <td>
+                            {{ meeting['Times'] }}
+                        </td>
+                        <td>
+                            {{ meeting['Days'] }}
+                        </td>
+                    </tr>
+                {% endfor %}
                 </tbody>
             </table>
-            <br>
-            <table>
-                <thead>    
-                    <tr>
-                        <th>Seats Filled</th>
-                        <th>Total Seats</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- dont know how we should format enrollment numbers
-                            in the case that there are multiple meetings, we do 
-                            not seem to have the enrollment for each meeting --> 
-                        <tr>
-                            <td>
-                                {{ section_details['EnrollmentTotal'] }}
-                            </td>
-                            <td>
-                                {{ section_details['EnrollmentCapacity'] }}
-                            </td>
-                        </tr>
-                </tbody>    
-            </table>
+               
+            <div class="enrollment">
+                <strong>Seats Filled:</strong> {{ section_details['EnrollmentTotal'] }}
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <strong>Total Seats:</strong> {{ section_details['EnrollmentCapacity'] }}
+            </div>
+            
             <h2>Location</h2>
             {% if section_location == 'ARR' or section_location == 'TBA' %}
                 <p>Location to be announced</p>
-            
             {% else %}
             <!-- get building name, city and/or address to display a point on a map -->
                 <!-- get building abbreviation -->
@@ -110,7 +92,7 @@
             
             {% endif %}
             <!-- write different ones for non-ann arbor stuff-->
-        </div><!--/.courseDetails -->    
-    </div><!-- /.courseWrap -->
+        </div><!--/.content -->    
+    </div><!-- /.pageWrap -->
 
 {% endblock %}

@@ -33,6 +33,7 @@ def subject(term_code, school_code, subject_code):
     data['selected_term'] = term_code
     data['selected_school'] = school_code
     data['selected_subject'] = subject_code
+    data['subjects'] = get_subjects(term_code, school_code)
     data['courses'] = get_catalog_numbers(term_code, school_code, subject_code)    
     return render_template('courses.html', **data)  
     
