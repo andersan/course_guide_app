@@ -79,23 +79,23 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
     'AH': 'Angell Hall,Ann+Arbor+MI',
     'AL': 'Walter E. Lay Automotive Lab,Ann+Arbor+MI',
     'ALH': 'Alice Lloyd Hall,Ann+Arbor+MI',
-    'ANNEX': '1015 E. Huron,Ann+Arbor+MI', #fixed?
-    'ARGUS2': '408 S. Fourth Street,Ann+Arbor+MI', #fixed?
+    'ANNEX': '1015+E+Huron,Ann+Arbor+MI', #fixed?
+    'ARGUS2': '408+S+4th+St,Ann+Arbor+MI', #fixed?
     'ARGUS3': 'Argus Building III, 416 S. Fourth Street,Ann+Arbor+MI',
     'ARR': 'Location to be Arranged',
-    'BAM HALL': 'Blanch Anderson Moore Hall, School of Music,Ann+Arbor+MI', #FIX
-    'BELL POOL': 'Margaret Bell Pool, Central Campus Recreation Building,Ann+Arbor+MI', #FIX
+    'BAM HALL': '1100 BAITS DR,Ann+Arbor+MI', #FIXED? Blanch Anderson Moore Hall, School of Music
+    'BELL POOL': 'Central Campus Recreation Building,Ann+Arbor+MI', #FIXED?
     'BEYST': 'Bob and Betty Beyster Building,Ann+Arbor+MI',
     'BIOL STAT': 'Biological Station,Pellston+MI', #FIXED? one in pellston
     'BMT': 'Burton Memorial Tower,Ann+Arbor+MI',
     'BOT GARD': 'Matthaei Botanical Gardens, Dixboro Road,Ann+Arbor+MI',
     'BSRB': 'Biomedical Science Research Building,Ann+Arbor+MI',
     'BURS': 'Bursley Hall,Ann+Arbor+MI',
-    'BUS': 'Business Administration,Ann+Arbor+MI',
+    'BUS': 'Business Administration,Ann+Arbor+MI', # same building as kresge library in our maps - is that correct?
     'CAMP DAVIS': 'Camp Davis, Jackson+Hole+Wyoming', #FIXED?
     'CCL': 'Clarence Cook Little Building,Ann+Arbor+MI',
     'CCRB': 'Central Campus Recreation Building,Ann+Arbor+MI',
-    'CHEM': 'Chemistry Building,Ann+Arbor+MI', 
+    'CHEM': '930+N+University+Ave,Ann+Arbor+MI', # fixed??? [displays the wrong name (some lab inside chem building)]
     'CHRYS': 'Chrysler Center,Ann+Arbor+MI', 
     'COMM PARK': '15041 S Commerce Dr.,Dearborn+MI+48120', #FIXED?: 15041 S Commerce Dr. Dearborn, MI 48120
     'COOL': 'Cooley Building,Ann+Arbor+MI',
@@ -131,32 +131,32 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
     'KEC': 'Kellogg Eye Center,Ann+Arbor+MI',
     'KEENE THTR EQ': 'Keene Theater, Residential College, East Quadrangle,Ann+Arbor+MI',
     'KELSEY': 'Kelsey Museum of Archaeology,Ann+Arbor+MI',
-    'KHRI': 'Kresge Hearing Research Institute,Ann+Arbor+MI', #FIX
+    'KHRI': '1500+E+Medical+Center+Dr,Ann+Arbor+MI', #FIXED? kresge hearing research institute
     'LANE': 'Lane Hall,Ann+Arbor+MI',
     'LBME': 'Lurie Biomedical Engineering Building,Ann+Arbor+MI',
     'LEAG': 'Michigan League,Ann+Arbor+MI',
     'LEC': 'Lurie Engineering Center,Ann+Arbor+MI',
-    'LLIB': '913+S+University Ave,Ann+Arbor+MI', #FIXED? Law Library
+    'LLIB': '913+S+University+Ave,Ann+Arbor+MI', #FIXED? Law Library
     'LORCH': 'Lorch Hall,Ann+Arbor+MI',
     'LSA': 'Literature, Science, and the Arts Building,Ann+Arbor+MI',
     'LSI': 'Life Sciences Institute,Ann+Arbor+MI',
     'LSSH': 'Law School South Hall,Ann+Arbor+MI',
     'MARKLEY': 'Mary Markley Hall,Ann+Arbor+MI',
-    'MAX KADE': 'Max Kade House, 627 Oxford Street,Ann+Arbor+MI', #FIX
+    'MAX KADE': '627+Oxford+Street,Ann+Arbor+MI', #FIXED? Max Kade House
     'MH': 'Mason Hall,Ann+Arbor+MI',
     'MHRI': 'Mental Health Research Institute,Ann+Arbor+MI',
     'MLB': 'Modern Languages Building,Ann+Arbor+MI',
     'MONROECTY HD': '2353+S+Custer+Rd,Monroe+MI+48161', #FIXED?: Monroe County Health Department, 2353 S custer Rd, Monroe< MI 48161
     'MOSHER': 'Mosher Jordan Hall,Ann+Arbor+MI',
     'MOTT': 'C.S. Mott Children\'s Hospital,Ann+Arbor+MI',
-    'MSC1': 'Medical Science, Building I,Ann+Arbor+MI', #FIX
-    'MSC2': 'Medical Science Building II,Ann+Arbor+MI', #FIX
-    'MSRB3': 'Medical Science Research Building III,Ann+Arbor+MI', #FIX
+    'MSC1': '1150+W+MEDICAL+CENTER+DR,Ann+Arbor+MI', #FIXED? Medical Science, Building I
+    'MSC2': '1137+CATHERINE+ST,Ann+Arbor+MI', #FIXED? Medical Science Building II
+    'MSRB3': '1150+W+MEDICAL+CENTER+DR,Ann+Arbor+MI', #FIXED? Medical Science Research Building III
     'NAME': 'Naval Architecture and Marine Engineering Building,Ann+Arbor+MI',
     'NCRB': 'North Campus Recreation Building,Ann+Arbor+MI',
     'NCRC': 'North Campus Research Complex,Ann+Arbor+MI',
-    'NIB': '300 North Ingalls Building,Ann+Arbor+MI',
-    '400NI': '400 North Ingalls Building,Ann+Arbor+MI',
+    'NIB': '300+North+Ingalls+Building,Ann+Arbor+MI',
+    '400NI': '400+North+Ingalls+Building,Ann+Arbor+MI',
     'NORTHVILLEPH': 'Northville State Hospital,Northville+MI', #does this work?
     'NQ': 'North Quad,Ann+Arbor+MI',
     'NS': 'Edward Henry Kraus Natural Science Building,Ann+Arbor+MI',
@@ -196,11 +196,11 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
     'WASHCTY HD': '555+Towner+Ave.+,Ypsilanti+MI', #FIXED? Washtenaw County Health Department
     'W-BUS': 'Wyly Hall,Ann+Arbor+MI',
     'WDC': '1226+Murfin+Ave,Ann+Arbor+MI', #FIXED?: 1226 Murfin AVE, Charles R. Walgreen, Jr. Drama Center
-    'WEILL': 'Joan and Sanford Weill Hall,Ann+Arbor+MI', #FIX
+    'WEILL': '735+STATE+ST,Ann+Arbor+MI', #FIXED? Joan and Sanford Weill Hall
     'WEIS': 'Weiser Hall,Ann+Arbor+MI',
     'WH': 'West Hall,Ann+Arbor+MI',
     'WOMEN\'S HOSP': 'Women\'s Hospital,Ann+Arbor+MI',
-    'WQ': 'West Quad,Ann+Arbor+MI',
+    'WQ': 'West Quad,Ann+Arbor+MI'
 }
                                                     
     return render_template('section-details.html', **data)  
