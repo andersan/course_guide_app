@@ -222,8 +222,8 @@ def test():
     'ARGUS2': '408+S+4th+St,Ann+Arbor+MI', #fixed?
     'ARGUS3': 'Argus Building III, 416 S. Fourth Street,Ann+Arbor+MI',
     'ARR': 'Location to be Arranged',
-    'BAM HALL': 'Blanch Anderson Moore Hall, School of Music,Ann+Arbor+MI', #FIX
-    'BELL POOL': 'Margaret Bell Pool, Central Campus Recreation Building,Ann+Arbor+MI', #FIX
+    'BAM HALL': '1100 BAITS DR,Ann+Arbor+MI', #FIXED? Blanch Anderson Moore Hall, School of Music
+    'BELL POOL': 'Central Campus Recreation Building,Ann+Arbor+MI', #FIXED?
     'BEYST': 'Bob and Betty Beyster Building,Ann+Arbor+MI',
     'BIOL STAT': 'Biological Station,Pellston+MI', #FIXED? one in pellston
     'BMT': 'Burton Memorial Tower,Ann+Arbor+MI',
@@ -234,7 +234,7 @@ def test():
     'CAMP DAVIS': 'Camp Davis, Jackson+Hole+Wyoming', #FIXED?
     'CCL': 'Clarence Cook Little Building,Ann+Arbor+MI',
     'CCRB': 'Central Campus Recreation Building,Ann+Arbor+MI',
-    'CHEM': 'Chemistry Building,Ann+Arbor+MI', # displays the wrong name (some lab inside chem building)
+    'CHEM': '930+N+University+Ave,Ann+Arbor+MI', # fixed??? [displays the wrong name (some lab inside chem building)]
     'CHRYS': 'Chrysler Center,Ann+Arbor+MI', 
     'COMM PARK': '15041 S Commerce Dr.,Dearborn+MI+48120', #FIXED?: 15041 S Commerce Dr. Dearborn, MI 48120
     'COOL': 'Cooley Building,Ann+Arbor+MI',
@@ -248,7 +248,7 @@ def test():
     'DENN': 'David M. Dennison Building (Weiser Hall),Ann+Arbor+MI',
     'DENT': 'Dental Building,Ann+Arbor+MI',
     'DOW': 'Dow Engineering Building,Ann+Arbor+MI',
-    'E-BUS': 'Executive Education,Ann+Arbor+MI', # what is this????
+    'E-BUS': 'Executive Education,Ann+Arbor+MI',
     'EECS': 'Electrical Engineering and Computer Science Building,Ann+Arbor+MI',
     'EH': 'East Hall,Ann+Arbor+MI',
     'EQ': 'East Quadrangle,Ann+Arbor+MI',
@@ -270,18 +270,18 @@ def test():
     'KEC': 'Kellogg Eye Center,Ann+Arbor+MI',
     'KEENE THTR EQ': 'Keene Theater, Residential College, East Quadrangle,Ann+Arbor+MI',
     'KELSEY': 'Kelsey Museum of Archaeology,Ann+Arbor+MI',
-    'KHRI': 'Kresge Hearing Research Institute,Ann+Arbor+MI', #FIX
+    'KHRI': '1500+E+Medical+Center+Dr,Ann+Arbor+MI', #FIXED? kresge hearing research institute
     'LANE': 'Lane Hall,Ann+Arbor+MI',
     'LBME': 'Lurie Biomedical Engineering Building,Ann+Arbor+MI',
     'LEAG': 'Michigan League,Ann+Arbor+MI',
     'LEC': 'Lurie Engineering Center,Ann+Arbor+MI',
-    'LLIB': 'Law Library,Ann+Arbor+MI', #FIX
+    'LLIB': '913+S+University+Ave,Ann+Arbor+MI', #FIXED? Law Library
     'LORCH': 'Lorch Hall,Ann+Arbor+MI',
     'LSA': 'Literature, Science, and the Arts Building,Ann+Arbor+MI',
     'LSI': 'Life Sciences Institute,Ann+Arbor+MI',
     'LSSH': 'Law School South Hall,Ann+Arbor+MI',
     'MARKLEY': 'Mary Markley Hall,Ann+Arbor+MI',
-    'MAX KADE': 'Max Kade House, 627 Oxford Street,Ann+Arbor+MI', #FIX
+    'MAX KADE': '627+Oxford+Street,Ann+Arbor+MI', #FIXED? Max Kade House
     'MH': 'Mason Hall,Ann+Arbor+MI',
     'MHRI': 'Mental Health Research Institute,Ann+Arbor+MI',
     'MLB': 'Modern Languages Building,Ann+Arbor+MI',
@@ -307,10 +307,10 @@ def test():
     'RACK': 'Horace H. Rackham, School of Graduate Studies,Ann+Arbor+MI',
     'RAND': 'Randall Laboratory,Ann+Arbor+MI',
     'R-BUS': 'Ross School of Business Building,Ann+Arbor+MI',
-    'REVELLI': 'William D. Revelli Hall,Ann+Arbor+MI', #FIX
+    'REVELLI': '350+E.+Hoover,Ann+Arbor+MI', #FIXED? William D. Revelli Hall
     'ROSS AC': 'Stephen M. Ross Academic Center,Ann+Arbor+MI',
     'RUTHVEN': 'A. G. Ruthven Museums Building,Ann+Arbor+MI',
-    'SCHEM': 'Glenn E. Schembechler Hall,Ann+Arbor+MI', #FIX
+    'SCHEM': '1200+S+State+St,Ann+Arbor+MI', #FIXED? Glenn E. Schembechler Hall
     'SEB': 'School of Education Building,Ann+Arbor+MI',
     'SHAPIRO': 'Shapiro Undergraduate Library,Ann+Arbor+MI',
     'SM': 'Earl V. Moore Building, School of Music,Ann+Arbor+MI',
@@ -332,10 +332,10 @@ def test():
     'USB': 'Undergraduate Science Building,Ann+Arbor+MI',
     'UTOWER': 'University Towers, 1225 S. University,Ann+Arbor+MI',
     'VETERANSHOSP': 'Veterans Administration Hospital,Ann+Arbor+MI',
-    'WASHCTY HD': 'Washtenaw County Health Department,Ann+Arbor+MI', #FIX
+    'WASHCTY HD': '555+Towner+Ave.+,Ypsilanti+MI', #FIXED? Washtenaw County Health Department
     'W-BUS': 'Wyly Hall,Ann+Arbor+MI',
-    'WDC': '1226 Murfin Ave,Ann+Arbor+MI', #FIX: 1226 Murfin AVE, Charles R. Walgreen, Jr. Drama Center
-    'WEILL': 'Joan and Sanford Weill Hall,Ann+Arbor+MI', #FIX
+    'WDC': '1226+Murfin+Ave,Ann+Arbor+MI', #FIXED?: 1226 Murfin AVE, Charles R. Walgreen, Jr. Drama Center
+    'WEILL': '735+STATE+ST,Ann+Arbor+MI', #FIXED? Joan and Sanford Weill Hall
     'WEIS': 'Weiser Hall,Ann+Arbor+MI',
     'WH': 'West Hall,Ann+Arbor+MI',
     'WOMEN\'S HOSP': 'Women\'s Hospital,Ann+Arbor+MI',
