@@ -75,7 +75,7 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
     'AH': 'Angell Hall,Ann+Arbor+MI',
     'AL': 'Walter E. Lay Automotive Lab,Ann+Arbor+MI',
     'ALH': 'Alice Lloyd Hall,Ann+Arbor+MI',
-    'ANNEX': '1015+E+Huron,Ann+Arbor+MI', 
+    'ANNEX': '735+STATE+ST,Ann+Arbor+MI', 
     'ARGUS2': '408+S+4th+Ave,Ann+Arbor+MI', 
     'ARGUS3': 'Argus Building III, 416 S. Fourth Street,Ann+Arbor+MI',
     'ARR': 'Location to be Arranged',
@@ -214,7 +214,7 @@ def test():
     'AH': 'Angell Hall,Ann+Arbor+MI',
     'AL': 'Walter E. Lay Automotive Lab,Ann+Arbor+MI',
     'ALH': 'Alice Lloyd Hall,Ann+Arbor+MI',
-    'ANNEX': '1015+E+Huron,Ann+Arbor+MI', #NOT FIXED
+    'ANNEX': '735+STATE+ST,Ann+Arbor+MI', #NOT FIXED 
     'ARGUS2': '408+S+4th+Ave,Ann+Arbor+MI', #fixed?
     'ARGUS3': 'Argus Building III, 416 S. Fourth Street,Ann+Arbor+MI',
     'ARR': 'Location to be Arranged',
