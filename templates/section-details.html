@@ -83,7 +83,7 @@
                 <!-- get building abbreviation -->
                 {% set section_location = section_location.split(' ', 1) %} 
                 <!-- match building abbreviation with building location -->
-                {% set building_name = building_locations.get(section_location[1]) %} 
+                {% set building_name = building_locations.get(section_location[1], None) %} 
             
             <!-- dynamically insert data into google maps embed API -->
             <iframe
