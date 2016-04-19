@@ -17,6 +17,7 @@
     </div>
 
     <div class="pageWrap">
+    
         <div class="sidebar">
             <h3>Courses</h3>
             <ul class="subnav">
@@ -29,6 +30,7 @@
                 {% endfor %}
             </ul>
         </div><!-- /.sidebar -->
+        
         <div class="content">
             <h1>{{ section_details['CourseDescr'] }}</h1>
             <h2 class="subhead">Section {{ selected_section }}</h2> 
@@ -91,8 +93,9 @@
             </iframe>
             
             {% endif %}
-            <!-- write different ones for non-ann arbor stuff-->
+            <!-- write different ones for non-ann arbor stuff -->
         </div><!--/.content -->    
+        
     </div><!-- /.pageWrap -->
 
 {% endblock %}

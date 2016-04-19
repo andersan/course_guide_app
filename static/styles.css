@@ -21,13 +21,13 @@ h1 {
         display: inline-block;
         vertical-align: middle;
     }
-h2:first-child {
-    margin-top: 0;
-}
 h2 {
     font-size: 18px;
     margin: 25px 0 10px 0;
 }
+    h2:first-child {
+        margin-top: 0;
+    }
 .subhead {
     font-size: 17px;
     font-weight: normal;
@@ -166,7 +166,7 @@ td {
 .sidebar {
     display: table-cell;
     padding-top: 10px;
-    width: 250px;
+    width: 225px;
     vertical-align: top;
 }
     .sidebar h3 {

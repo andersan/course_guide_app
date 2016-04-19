@@ -1,46 +1,46 @@
 <!doctype html>
 <html>
-  <head>
-    {% block head %}
-    {% endblock %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  </head>
-  <body>
-    <div class="Wrap">
-        <div id="header">
-            <div class="wrap">
-                <ul id="nav">
-                    <li><a href="/">Find a Class</a></li>
-                    <li><a href="/about-us.html">About Us</a></li>
-                </ul>
-                <h2><a href="/">A Mere Zebra Scheduler</a></h2>
+    <head>
+        {% block head %}
+        {% endblock %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+        <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    </head>
+    <body>
+        <div class="Wrap">
+            <div id="header">
+                <div class="wrap">
+                    <ul id="nav">
+                        <li><a href="/">Find a Class</a></li>
+                        <li><a href="/about-us.html">About Us</a></li>
+                    </ul>
+                    <h2><a href="/">A Mere Zebra Scheduler</a></h2>
+                </div>
             </div>
-        </div>
-        <div id="content">
+            <div id="content">
+                <div class="wrap">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div><!-- /.Wrap -->    
+        <div id="footer">
             <div class="wrap">
-                {% block content %}
+                {% block footer %}
+                    &copy 2016 Meerkat Zebras
                 {% endblock %}
             </div>
         </div>
-    </div><!-- /.Wrap -->    
-    <div id="footer">
-        <div class="wrap">
-            {% block footer %}
-                &copy 2016 Meerkat Zebras
-            {% endblock %}
-        </div>
-    </div>
-    
-    <script>
-        $(document).ready(function() {
-            $(".breadcrumbs .item:contains('2110')").html("Fall 2016");
-            $(".breadcrumbs .item:contains('2100')").html("Summer 2016"); 
-            $(".breadcrumbs .item:contains('2090')").html("Spring/Summer 2016"); 
-            $(".breadcrumbs .item:contains('2080')").html("Spring 2016"); 
-            $(".breadcrumbs .item:contains('2070')").html("Winter 2016"); 
-        });
-    </script>
-  </body>
+        
+        <script>
+            $(document).ready(function() {
+                $(".breadcrumbs .item:contains('2110')").html("Fall 2016");
+                $(".breadcrumbs .item:contains('2100')").html("Summer 2016"); 
+                $(".breadcrumbs .item:contains('2090')").html("Spring/Summer 2016"); 
+                $(".breadcrumbs .item:contains('2080')").html("Spring 2016"); 
+                $(".breadcrumbs .item:contains('2070')").html("Winter 2016"); 
+            });
+        </script>
+    </body>
 </html>
