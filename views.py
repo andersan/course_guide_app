@@ -79,7 +79,7 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
     'AH': 'Angell Hall,Ann+Arbor+MI',
     'AL': 'Walter E. Lay Automotive Lab,Ann+Arbor+MI',
     'ALH': 'Alice Lloyd Hall,Ann+Arbor+MI',
-    'ANNEX': '1015+E+Huron,Ann+Arbor+MI', #fixed?
+    'ANNEX': '1015+E+Huron,Ann+Arbor+MI', #NOT FIXED
     'ARGUS2': '408+S+4th+St,Ann+Arbor+MI', #fixed?
     'ARGUS3': 'Argus Building III, 416 S. Fourth Street,Ann+Arbor+MI',
     'ARR': 'Location to be Arranged',
@@ -197,7 +197,7 @@ def section(term_code, school_code, subject_code, catalog_number, section_number
     'W-BUS': 'Wyly Hall,Ann+Arbor+MI',
     'WDC': '1226+Murfin+Ave,Ann+Arbor+MI', #FIXED?: 1226 Murfin AVE, Charles R. Walgreen, Jr. Drama Center
     'WEILL': '735+STATE+ST,Ann+Arbor+MI', #FIXED? Joan and Sanford Weill Hall
-    'WEIS': 'Weiser Hall+Ann+Arbor+MI',
+    'WEIS': 'Weiser Hall,Ann+Arbor+MI',
     'WH': 'West Hall,Ann+Arbor+MI',
     'WOMEN\'S HOSP': 'Women\'s Hospital,Ann+Arbor+MI',
     'WQ': 'West Quad,Ann+Arbor+MI'
@@ -218,8 +218,8 @@ def test():
     'AH': 'Angell Hall,Ann+Arbor+MI',
     'AL': 'Walter E. Lay Automotive Lab,Ann+Arbor+MI',
     'ALH': 'Alice Lloyd Hall,Ann+Arbor+MI',
-    'ANNEX': '1015+E+Huron,Ann+Arbor+MI', #fixed?
-    'ARGUS2': '408+S+4th+St,Ann+Arbor+MI', #fixed?
+    'ANNEX': '1015+E+Huron,Ann+Arbor+MI', #NOT FIXED
+    'ARGUS2': '408+S+4th+Ave,Ann+Arbor+MI', #fixed?
     'ARGUS3': 'Argus Building III, 416 S. Fourth Street,Ann+Arbor+MI',
     'ARR': 'Location to be Arranged',
     'BAM HALL': '1100 BAITS DR,Ann+Arbor+MI', #FIXED? Blanch Anderson Moore Hall, School of Music
@@ -275,7 +275,7 @@ def test():
     'LBME': 'Lurie Biomedical Engineering Building,Ann+Arbor+MI',
     'LEAG': 'Michigan League,Ann+Arbor+MI',
     'LEC': 'Lurie Engineering Center,Ann+Arbor+MI',
-    'LLIB': '913+S+University+Ave,Ann+Arbor+MI', #FIXED? Law Library
+    'LLIB': '801+Monroe+St,Ann+Arbor+MI', #FIXED? Law Library
     'LORCH': 'Lorch Hall,Ann+Arbor+MI',
     'LSA': 'Literature, Science, and the Arts Building,Ann+Arbor+MI',
     'LSI': 'Life Sciences Institute,Ann+Arbor+MI',
@@ -324,7 +324,7 @@ def test():
     'STRNS': 'Sterns Building,Ann+Arbor+MI',
     'T&TB': 'Track and Tennis Building,Ann+Arbor+MI',
     'TAP': 'Tappan Hall,Ann+Arbor+MI',
-    'TAUBL': 'Learning Resource Center, Taubman Medical Library,Ann+Arbor+MI',
+    'TAUBL': 'Taubman Medical Library,Ann+Arbor+MI', #fixed?
     'TISCH': 'Tisch Hall,Ann+Arbor+MI',
     'UM HOSP': 'University Hospital Medical Campus,Ann+Arbor+MI',
     'UMMA': 'University of Michigan Museum of Art (Alumni Memorial Hall),Ann+Arbor+MI',
@@ -332,10 +332,10 @@ def test():
     'USB': 'Undergraduate Science Building,Ann+Arbor+MI',
     'UTOWER': 'University Towers, 1225 S. University,Ann+Arbor+MI',
     'VETERANSHOSP': 'Veterans Administration Hospital,Ann+Arbor+MI',
-    'WASHCTY HD': '555+Towner+Ave.+,Ypsilanti+MI', #FIXED? Washtenaw County Health Department
+    'WASHCTY HD': '555+Towner+Ave.+,Ypsilanti+MI', 
     'W-BUS': 'Wyly Hall,Ann+Arbor+MI',
-    'WDC': '1226+Murfin+Ave,Ann+Arbor+MI', #FIXED?: 1226 Murfin AVE, Charles R. Walgreen, Jr. Drama Center
-    'WEILL': '735+STATE+ST,Ann+Arbor+MI', #FIXED? Joan and Sanford Weill Hall
+    'WDC': '1226+Murfin+Ave,Ann+Arbor+MI', 
+    'WEILL': '735+STATE+ST,Ann+Arbor+MI', 
     'WEIS': 'Weiser Hall,Ann+Arbor+MI',
     'WH': 'West Hall,Ann+Arbor+MI',
     'WOMEN\'S HOSP': 'Women\'s Hospital,Ann+Arbor+MI',
