@@ -76,24 +76,29 @@
             </div>
             
             <h2>Location</h2>
-            {% if section_location == 'ARR' or section_location == 'TBA' %}
-                <p>Location to be announced</p>
-            {% else %}
-            <!-- get building name, city and/or address to display a point on a map -->
-                <!-- get building abbreviation -->
-                {% set section_location = section_location.split(' ', 1) %} 
-                <!-- match building abbreviation with building location -->
-                {% set building_name = building_locations.get(section_location[1], None) %} 
-            
-            <!-- dynamically insert data into google maps embed API -->
-            <iframe
-              width="600"
-              height="450"
-              frameborder="0" style="border:0"
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCoSqzSoUuwDTbtrZq25mk0Mj_rDF_5N7k&q={{building_name}}" allowfullscreen>
-            </iframe>
-            
-            {% endif %}
+            {% for meeting in section_meetings %}
+                {% set section_location = meeting['Location'] %}
+                
+                
+                {% if section_location == 'ARR' or section_location == 'TBA' %}
+                    <p>Location to be announced</p>
+                {% else %}
+                <!-- get building name, city and/or address to display a point on a map -->
+                    <!-- get building abbreviation -->
+                    {% set section_location = section_location.split(' ', 1) %} 
+                    <!-- match building abbreviation with building location -->
+                    {% set building_name = building_locations.get(section_location[1], None) %} 
+                
+                <!-- dynamically insert data into google maps embed API -->
+                <iframe
+                  width="600"
+                  height="450"
+                  frameborder="0" style="border:0"
+                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCoSqzSoUuwDTbtrZq25mk0Mj_rDF_5N7k&q={{building_name}}" allowfullscreen>
+                </iframe>
+                
+                {% endif %}
+            {% endfor %}
             
         </div><!--/.content -->    
         
